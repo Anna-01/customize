@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 所有日志进入all.log和控制台日志，错误日志进入error.log, 业务日志进入biz.log。 author: Robert Lee -->
+
+<configuration scan="true" >
+
+    <contextName>xiaodai-app</contextName>
+    <!--日志路径 -->
+    <property name="logback.logs.path" value="/server/logs/" />
+    <!--项目名 -->
+    <property name="logback.project.name" value="xiaodai-app" />
+    <property name="req.source" value="1020" />
+    <!--日志文件名的日期格式 -->
+    <timestamp key="byDay" datePattern="yyyyMMdd" />
+    <!-- 控制台日志 -->
+    <appender name="stdout.default" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder charset="UTF-8">
+            <pattern>[%level][%date{yyyy-MM-dd HH:mm:ss}][%X{req.id}][%X{user.name}][%X{req.remoteAddr}][%X{req.context}|%X{req.requestURI}][%logger|%X{method}][%msg]%n</pattern>
+        </encoder>
+    </appender>
+
+    <!--filter route log config -->
+    <property name="LOG_HOME" value="/server/logs/"/>
+    <property name="DEFAULT_PATTERN" value="[%level]%date{yyyy-MM-dd HH:mm:ss}[%X{user.name}|%X{req.remoteAddr}|%X{req.id}|%X{req.serverIp}|%X{req.context}|%X{req.requestURI}]%logger|%X{method}|%msg%n"/>
+    <property name="CHARSET" value="UTF-8"/>
+
+    <appender name="APP-FILTER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/xiaodai-app-filter.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/%d{yyyyMMdd}/xiaodai-app-filter.log</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${DEFAULT_PATTERN}</pattern>
+            <charset>${CHARSET}</charset>
+        </encoder>
+    </appender>
+
+    <!--filter route log config -->
+    <appender name="ASYNC-CONSOLE" class="ch.qos.logback.classic.AsyncAppender">
+        <!--默认是false，代表在队列放满的情况下是否卡住线程。-->
+        <neverBlock>true</neverBlock>
+        <!-- 默认的,如果队列的80%已满,则会丢弃TRACT、DEBUG、INFO级别的日志，为了不丢失日志.故设置为0 -->
+        <discardingThreshold>0</discardingThreshold>
+        <!-- 更改默认的队列的深度,该值会影响性能.默认值为256 -->
+        <queueSize>1024</queueSize>
+        <!-- 添加附加的appender,最多只能添加一个 添加多个只会生效第一个-->
+        <appender-ref ref ="stdout.default"/>
+    </appender>
+   <!-- 小贷产品的-->
+    <!-- 自己的package下输出级别定义为 DEBUG -->
+    <logger name="com.yinke.loan" level="DEBUG" />
+    <logger name="com.yinke.loan.base" level="INFO" />
+
+    <root level="INFO">
+        <appender-ref ref="ASYNC-CONSOLE" />
+    </root>
+</configuration>
