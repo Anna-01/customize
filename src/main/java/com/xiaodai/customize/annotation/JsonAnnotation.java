@@ -22,5 +22,5 @@ public @interface JsonAnnotation {
     /**
      * 转换后方法的值
      */
-    //Object getResult() default toBean().newInstance();
+    //Object getResult() default ;
 }

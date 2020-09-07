@@ -2,9 +2,8 @@ package com.xiaodai.customize;
 
 import com.xiaodai.customize.service.JsonToBeanService;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
@@ -12,10 +11,16 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 @SpringBootTest
+@EnableAspectJAutoProxy(exposeProxy = true, proxyTargetClass = true)
 public class CountDownTest {
 
     @Resource
     private JsonToBeanService jsonToBeanService;
+
+    //并发数
+    private static final int threadNum = 20;
+    //倒计时数 发令枪 用于制造线程的并发执行
+    private static CountDownLatch cdl = new CountDownLatch(threadNum);
 
     public static final String jstring = "{\"name\":\"lijiaxing\",\"age\":\"11\", \"date\":\"2020-01-18-13\"}";
 
@@ -28,7 +33,7 @@ public class CountDownTest {
      * @param args
      */
     @Test
-    @PostConstruct
+    //@PostConstruct
     public void testCountDown(String[] args) {
         ExecutorService service = Executors.newCachedThreadPool();
         final CountDownLatch cdOrder = new CountDownLatch(1);
@@ -38,7 +43,7 @@ public class CountDownTest {
                 @Override
                 public void run() {
                     try {
-                        jsonToBeanService.getJson(jstring);
+                        //jsonToBeanService.getJson(jstring);
                         System.out.println("选手" + Thread.currentThread().getName() + "正在等待裁判发布口令");
                         cdOrder.await();
                         System.out.println("选手" + Thread.currentThread().getName() + "已接受裁判口令");
@@ -64,6 +69,49 @@ public class CountDownTest {
             e.printStackTrace();
         }
         service.shutdown();
+    }
+
+    /**
+     * 模拟并发
+     */
+    @Test
+    @PostConstruct
+    public void test() {
+        for(int i = 0;i< threadNum;i++) {
+            //new多个子线程
+            new Thread(new ThreadClass(jsonToBeanService)).start();
+            //计数器-1
+            cdl.countDown();
+        }
+        try {
+            //主线程 等待 子线程执行完 等待
+            Thread.currentThread().join();
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
+    //多线程执行类
+    public class ThreadClass implements Runnable{
+        private JsonToBeanService jsonToBeanService;
+
+        public ThreadClass(JsonToBeanService showService) {
+            this.jsonToBeanService = showService;
+        }
+
+        @Override
+        public void run() {
+            try {
+                //所有子线程在这里等待，当所有线程实例化后，停止等待
+                cdl.await();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            //执行业务方法
+            jsonToBeanService.getJson(jstring);
+        }
+
     }
 
 }

@@ -1,7 +1,10 @@
 package com.xiaodai.customize;
 
+import com.xiaodai.customize.controller.po.Men;
 import com.xiaodai.customize.service.JsonToBeanService;
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
@@ -13,11 +16,13 @@ import java.util.HashMap;
 @SpringBootTest
 @EnableAspectJAutoProxy(exposeProxy = true, proxyTargetClass = true)
 class CustomizeApplicationTests {
-
-    public static final String jstring = "{\"name\":\"lijiaxing\",\"age\":\"11\", \"date\":\"2020-01-18-13\"}";
+    Logger logger = LoggerFactory.getLogger(CustomizeApplicationTests.class);
+    public static Date date = new Date();
+    public static final String jstring = "{\"name\":\"lijiaxing\",\"age\":\"11\", \"creatTime\":\"" + date + "\"}";
 
     @Resource
     public JsonToBeanService jsonToBeanService;
+
 
     @Test
     void contextLoads() {
@@ -25,9 +30,13 @@ class CustomizeApplicationTests {
         date.toString();
     }
 
+    /**
+     * 不会出现 多次 可能是没启动另一个容器
+     */
     @Test
     void testJson() {
-        jsonToBeanService.getJson(jstring);
+        logger.info("多线程解析json开始");
+        //jsonToBeanService.getJson(jstring);
     }
     @Test
     void testMapSize() {
@@ -36,8 +45,11 @@ class CustomizeApplicationTests {
         System.out.println(map.size());
     }
 
+    /**
+     * 容器启动后就执行
+     */
     @Test
-    @PostConstruct
+    //@PostConstruct
     void testChange() {
         //顺序多线程
         new ThreadAnotion(jsonToBeanService).start();
@@ -54,8 +66,16 @@ class CustomizeApplicationTests {
 
         @Override
         public void run() {
-            jsonToBeanService.getJson("{\"name\":\"lijiaxing\",\"age\":\"null\"}");
+            jsonToBeanService.getJson(jstring);
         }
+    }
+
+    @Test
+    void testMen () {
+        System.out.println(jstring);
+        Men men = new Men();
+        men.setName("ljx");
+        System.out.println(men.toString());
     }
 
 }

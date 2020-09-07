@@ -4,18 +4,23 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.xiaodai.customize.annotation.JsonAnnotation;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
 
@@ -27,9 +32,12 @@ import java.util.Locale;
 @Aspect
 @EnableAspectJAutoProxy(exposeProxy = true, proxyTargetClass = true)
 public class JsonToJsonAop {
+    Logger logger = LoggerFactory.getLogger(JsonToJsonAop.class);
 
-    public static HashMap safeMap = new HashMap();
+    public static HashMap resultMap = new HashMap();
 
+    @Resource
+    private StringRedisTemplate stringRedisTemplate;
 
     /**
      * 切点
@@ -47,9 +55,6 @@ public class JsonToJsonAop {
      */
     @Before(value = "@annotation(around)")
     public void json2Bean(JoinPoint joinPoint, JsonAnnotation around) throws Throwable {
-        /*Class cls = joinPoint.getSignature().getDeclaringType();
-        Class willCla = around.toBean();
-        System.out.println("获得签名=" + cls);*/
         //获取要转换的类型
         Class willCla = around.toBean();
         //获取方法的参数
@@ -59,8 +64,9 @@ public class JsonToJsonAop {
         //处理转换
         Object result =  jsonToObject(willCla, jsonObject);
         //放入缓存中 或者放入容器启动后执行
-        //System.out.println("输出结果" + JSONObject.toJSONString(result));
+        logger.info("当前线程={}, json转换结果result={}", Thread.currentThread().getName(), JSONObject.toJSON(result));
         //todo 获取解析结果
+        //resultMap.put(objects, result);
     }
 
     /**
@@ -72,7 +78,7 @@ public class JsonToJsonAop {
      * @throws IllegalAccessException
      * @throws InstantiationException
      */
-    public  <T> T jsonToObject(Class<T> clazz, JSONObject source) throws IllegalAccessException, InstantiationException {
+    public   <T> T jsonToObject(Class<T> clazz, JSONObject source) throws IllegalAccessException, InstantiationException {
         //目标对象
         T result = clazz.newInstance();
         //目标方法
@@ -87,9 +93,9 @@ public class JsonToJsonAop {
         for (String key : source.keySet()) {
             if (methodMap.containsKey(key)) {
                 //对目标对象赋值
-                SafeMap.setKey(key);
+                //SafeMap.setKey(key);
                 setProperty(result, methodMap.get(key), source.get(key));
-                SafeMap.getKey(key);
+                //SafeMap.getKey(key);
             }
         }
         return result;
@@ -123,8 +129,13 @@ public class JsonToJsonAop {
             if (type.getName().equals("boolean") && isBoolean(setValueString)) {
                 method.invoke(obj, (setValueString));
             }
-            if (type.getName().equals("long") && isDate(setValueString)) {
-                method.invoke(obj, Long.parseLong(setValueString));
+            if (type.getName().equals("long")) {
+                Date date = checkDate(setValueString);
+                if (date != null) {
+                    method.invoke(obj, date.getTime());
+                } else {
+                    method.invoke(obj, Long.parseLong(setValueString));
+                }
             }
             if (type == String.class) {
                 method.invoke(obj, setValueString);
@@ -137,6 +148,18 @@ public class JsonToJsonAop {
         } catch (InvocationTargetException e) {
             e.printStackTrace();
         }
+    }
+
+    private Date checkDate(String setValueString) {
+        Date date = null;
+        try {
+            date = new SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy", Locale.US).parse(setValueString);
+            long time = date.getTime();
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return  null;
+        }
+        return date;
     }
 
     /**
@@ -158,6 +181,7 @@ public class JsonToJsonAop {
      */
     public boolean isDate(String setValue) {
         boolean isDate = false;
+        //Date date = new SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy", Locale.US).parse(setValue);
         SimpleDateFormat sdf=  new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
         try {
             sdf.format(setValue);
