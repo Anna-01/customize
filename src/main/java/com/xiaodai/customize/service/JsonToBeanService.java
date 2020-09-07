@@ -21,7 +21,7 @@ public class JsonToBeanService {
     @JsonAnnotation(toBean = Men.class)
     public void getJson(String sourceJson) {
 
-        //Men men = (Men) JsonToJsonAop.resultMap.get(sourceJson);
-        //logger.info("转换结果={}", men.toString());
+        Men men = (Men) JsonToJsonAop.resultMap.get(sourceJson);
+        logger.info("转换结果={}", men.toString());
     }
 }

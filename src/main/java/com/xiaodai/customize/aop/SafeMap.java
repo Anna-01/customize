@@ -16,19 +16,24 @@ public class SafeMap {
     private static volatile Integer opator = 1;
 
     /**
-     *
+     *存入key
      */
     public static void setKey(String mName)  {
         synchronized (safeMap) {
             if (safeMap.size() == 0) {
-                safeMap.put(mName, opator);
-                logger.info(Thread.currentThread().getName() + "notify");
-                safeMap.notify();
+                try {
+                    logger.info(Thread.currentThread().getName() + "setKeyWait");
+                    safeMap.put(mName, opator);
+                    safeMap.wait();
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             } else {
                 try {
-                    logger.info(Thread.currentThread().getName() + "wait");
-                    safeMap.wait();
-                } catch (InterruptedException e) {
+                    logger.info(Thread.currentThread().getName() + "setKeyNotify");
+                    safeMap.notify();
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
@@ -36,23 +41,29 @@ public class SafeMap {
     }
 
     /**
-     *
+     *取出key并比较
      * @param mName
      * @param
      */
     public static void getKey(String mName)  {
         synchronized (safeMap) {
+            logger.info("map的size={}", safeMap.size());
             if (safeMap.size() != 0) {
                 if (safeMap.containsKey(mName)) {
-                    safeMap.remove(mName);
-                    logger.info(Thread.currentThread().getName() + "notify");
-                    safeMap.notify();
+                    try {
+                        safeMap.remove(mName);
+                        logger.info(Thread.currentThread().getName() + "getKeyWait");
+                        safeMap.wait();
+
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 }
             } else {
                 try {
-                    logger.info(Thread.currentThread().getName() + "wait");
-                    safeMap.wait();
-                } catch (InterruptedException e) {
+                    logger.info(Thread.currentThread().getName() + "getKeyNotify");
+                    safeMap.notify();
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }

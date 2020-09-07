@@ -66,7 +66,7 @@ public class JsonToJsonAop {
         //放入缓存中 或者放入容器启动后执行
         logger.info("当前线程={}, json转换结果result={}", Thread.currentThread().getName(), JSONObject.toJSON(result));
         //todo 获取解析结果
-        //resultMap.put(objects, result);
+        resultMap.put(objects, result);
     }
 
     /**
@@ -93,9 +93,9 @@ public class JsonToJsonAop {
         for (String key : source.keySet()) {
             if (methodMap.containsKey(key)) {
                 //对目标对象赋值
-                //SafeMap.setKey(key);
+                SafeMap.setKey(key);
                 setProperty(result, methodMap.get(key), source.get(key));
-                //SafeMap.getKey(key);
+                SafeMap.getKey(key);
             }
         }
         return result;

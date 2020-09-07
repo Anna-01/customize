@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.Date;
 
 /**
- * 前端用的
+ * springmvc 前端用 没用上
  * Date转long
  * @author My
  */

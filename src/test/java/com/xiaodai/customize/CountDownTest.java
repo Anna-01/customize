@@ -18,7 +18,7 @@ public class CountDownTest {
     private JsonToBeanService jsonToBeanService;
 
     //并发数
-    private static final int threadNum = 20;
+    private static final int threadNum = 5;
     //倒计时数 发令枪 用于制造线程的并发执行
     private static CountDownLatch cdl = new CountDownLatch(threadNum);
 
