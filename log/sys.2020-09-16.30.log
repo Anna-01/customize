@@ -1,0 +1,23 @@
+2020-09-16 23:53:20,138 INFO (ConsumerService.java:42)- 消费者消费商品=84
+2020-09-16 23:53:20,145 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:53:20,145 INFO (ProduceService.java:43)- 生产者生产第85个商品maxSize是2
+2020-09-16 23:53:20,146 INFO (ProduceService.java:43)- 生产者生产第86个商品maxSize是2
+2020-09-16 23:53:20,146 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:53:20,147 INFO (ConsumerService.java:42)- 消费者消费商品=85
+2020-09-16 23:53:20,147 INFO (ConsumerService.java:42)- 消费者消费商品=86
+2020-09-16 23:53:20,148 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:53:20,150 INFO (ProduceService.java:43)- 生产者生产第87个商品maxSize是2
+2020-09-16 23:53:20,151 INFO (ProduceService.java:43)- 生产者生产第88个商品maxSize是2
+2020-09-16 23:53:20,151 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:53:20,154 INFO (ConsumerService.java:42)- 消费者消费商品=87
+2020-09-16 23:53:20,155 INFO (ConsumerService.java:42)- 消费者消费商品=88
+2020-09-16 23:53:20,155 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:53:20,156 INFO (ProduceService.java:43)- 生产者生产第89个商品maxSize是2
+2020-09-16 23:53:20,156 INFO (ProduceService.java:43)- 生产者生产第90个商品maxSize是2
+2020-09-16 23:53:20,156 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:53:20,156 INFO (ConsumerService.java:42)- 消费者消费商品=89
+2020-09-16 23:53:20,157 INFO (ConsumerService.java:42)- 消费者消费商品=90
+2020-09-16 23:53:20,157 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:53:40,151 INFO (StartupInfoLogger.java:55)- Starting ConsumerAndProducerTest on SKY-20200628CJA with PID 17476 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-16 23:53:40,153 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-16 23:53:40,154 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default

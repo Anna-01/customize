@@ -1,0 +1,18 @@
+2020-09-10 20:46:10,722 INFO (StartupInfoLogger.java:61)- Started CountDownTest in 5.316 seconds (JVM running for 7.499)
+2020-09-10 20:46:32,702 INFO (SafeMap.java:26)- Thread-3namesetKeyWait
+2020-09-10 20:48:30,692 INFO (SafeMap.java:35)- Thread-2namesetKeyNotify
+2020-09-10 20:48:31,573 INFO (SafeMap.java:51)- map的size=1
+2020-09-10 20:48:35,951 INFO (SafeMap.java:56)- Thread-3namegetKeyWait
+2020-09-10 20:48:52,032 INFO (SafeMap.java:51)- map的size=0
+2020-09-10 20:48:52,034 INFO (SafeMap.java:65)- Thread-2namegetKeyNotify
+2020-09-10 20:48:52,035 INFO (SafeMap.java:26)- Thread-3agesetKeyWait
+2020-09-10 20:48:54,483 INFO (SafeMap.java:35)- Thread-2agesetKeyNotify
+2020-09-10 20:48:54,484 INFO (SafeMap.java:51)- map的size=1
+2020-09-10 20:48:54,820 INFO (SafeMap.java:56)- Thread-3agegetKeyWait
+2020-09-10 20:48:55,717 INFO (SafeMap.java:51)- map的size=0
+2020-09-10 20:48:55,718 INFO (SafeMap.java:65)- Thread-2agegetKeyNotify
+2020-09-10 20:48:56,687 INFO (JsonToJsonAop.java:71)- 当前线程=Thread-3, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-10 20:48:56,692 INFO (JsonToJsonAop.java:71)- 当前线程=Thread-2, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-10 20:51:06,651 INFO (StartupInfoLogger.java:55)- Starting CountDownTest on SKY-20200628CJA with PID 19052 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-10 20:51:06,653 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-10 20:51:06,711 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default

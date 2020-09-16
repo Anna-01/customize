@@ -1,0 +1,32 @@
+2020-09-16 23:53:20,040 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:53:20,046 INFO (ConsumerService.java:42)- 消费者消费商品=9
+2020-09-16 23:53:20,047 INFO (ConsumerService.java:42)- 消费者消费商品=10
+2020-09-16 23:53:20,047 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:53:20,048 INFO (ProduceService.java:43)- 生产者生产第11个商品maxSize是2
+2020-09-16 23:53:20,048 INFO (ProduceService.java:43)- 生产者生产第12个商品maxSize是2
+2020-09-16 23:53:20,048 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:53:20,049 INFO (ConsumerService.java:42)- 消费者消费商品=11
+2020-09-16 23:53:20,049 INFO (ConsumerService.java:42)- 消费者消费商品=12
+2020-09-16 23:53:20,050 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:53:20,050 INFO (ProduceService.java:43)- 生产者生产第13个商品maxSize是2
+2020-09-16 23:53:20,050 INFO (ProduceService.java:43)- 生产者生产第14个商品maxSize是2
+2020-09-16 23:53:20,050 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:53:20,051 INFO (ConsumerService.java:42)- 消费者消费商品=13
+2020-09-16 23:53:20,051 INFO (ConsumerService.java:42)- 消费者消费商品=14
+2020-09-16 23:53:20,051 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:53:20,052 INFO (ProduceService.java:43)- 生产者生产第15个商品maxSize是2
+2020-09-16 23:53:20,052 INFO (ProduceService.java:43)- 生产者生产第16个商品maxSize是2
+2020-09-16 23:53:20,052 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:53:20,052 INFO (ConsumerService.java:42)- 消费者消费商品=15
+2020-09-16 23:53:20,053 INFO (ConsumerService.java:42)- 消费者消费商品=16
+2020-09-16 23:53:20,053 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:53:20,053 INFO (ProduceService.java:43)- 生产者生产第17个商品maxSize是2
+2020-09-16 23:53:20,053 INFO (ProduceService.java:43)- 生产者生产第18个商品maxSize是2
+2020-09-16 23:53:20,054 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:53:20,054 INFO (ConsumerService.java:42)- 消费者消费商品=17
+2020-09-16 23:53:20,054 INFO (ConsumerService.java:42)- 消费者消费商品=18
+2020-09-16 23:53:20,055 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:53:20,055 INFO (ProduceService.java:43)- 生产者生产第19个商品maxSize是2
+2020-09-16 23:53:20,055 INFO (ProduceService.java:43)- 生产者生产第20个商品maxSize是2
+2020-09-16 23:53:20,055 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:53:20,056 INFO (ConsumerService.java:42)- 消费者消费商品=19

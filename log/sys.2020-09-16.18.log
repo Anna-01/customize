@@ -1,0 +1,64 @@
+2020-09-16 23:50:05,416 INFO (ConsumerService.java:42)- 消费者消费商品=20
+2020-09-16 23:50:05,421 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:50:05,422 INFO (ProduceService.java:43)- 生产者生产第21个商品
+2020-09-16 23:50:05,424 INFO (ProduceService.java:43)- 生产者生产第22个商品
+2020-09-16 23:50:05,425 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:50:05,426 INFO (ConsumerService.java:42)- 消费者消费商品=21
+2020-09-16 23:50:05,426 INFO (ConsumerService.java:42)- 消费者消费商品=22
+2020-09-16 23:50:05,426 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:50:05,427 INFO (ProduceService.java:43)- 生产者生产第23个商品
+2020-09-16 23:50:05,427 INFO (ProduceService.java:43)- 生产者生产第24个商品
+2020-09-16 23:50:05,427 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:50:05,428 INFO (ConsumerService.java:42)- 消费者消费商品=23
+2020-09-16 23:50:05,428 INFO (ConsumerService.java:42)- 消费者消费商品=24
+2020-09-16 23:50:05,428 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:50:05,428 INFO (ProduceService.java:43)- 生产者生产第25个商品
+2020-09-16 23:50:05,429 INFO (ProduceService.java:43)- 生产者生产第26个商品
+2020-09-16 23:50:05,429 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:50:05,429 INFO (ConsumerService.java:42)- 消费者消费商品=25
+2020-09-16 23:50:05,429 INFO (ConsumerService.java:42)- 消费者消费商品=26
+2020-09-16 23:50:05,430 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:50:05,430 INFO (ProduceService.java:43)- 生产者生产第27个商品
+2020-09-16 23:50:05,430 INFO (ProduceService.java:43)- 生产者生产第28个商品
+2020-09-16 23:50:05,430 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:50:05,431 INFO (ConsumerService.java:42)- 消费者消费商品=27
+2020-09-16 23:50:05,432 INFO (ConsumerService.java:42)- 消费者消费商品=28
+2020-09-16 23:50:05,433 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:50:05,433 INFO (ProduceService.java:43)- 生产者生产第29个商品
+2020-09-16 23:50:05,434 INFO (ProduceService.java:43)- 生产者生产第30个商品
+2020-09-16 23:50:05,434 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:50:05,434 INFO (ConsumerService.java:42)- 消费者消费商品=29
+2020-09-16 23:50:05,434 INFO (ConsumerService.java:42)- 消费者消费商品=30
+2020-09-16 23:50:05,435 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:50:05,435 INFO (ProduceService.java:43)- 生产者生产第31个商品
+2020-09-16 23:50:05,435 INFO (ProduceService.java:43)- 生产者生产第32个商品
+2020-09-16 23:50:05,435 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:50:05,436 INFO (ConsumerService.java:42)- 消费者消费商品=31
+2020-09-16 23:50:05,436 INFO (ConsumerService.java:42)- 消费者消费商品=32
+2020-09-16 23:50:05,436 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:50:05,436 INFO (ProduceService.java:43)- 生产者生产第33个商品
+2020-09-16 23:50:05,437 INFO (ProduceService.java:43)- 生产者生产第34个商品
+2020-09-16 23:50:05,437 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:50:05,437 INFO (ConsumerService.java:42)- 消费者消费商品=33
+2020-09-16 23:50:05,438 INFO (ConsumerService.java:42)- 消费者消费商品=34
+2020-09-16 23:50:05,438 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:50:05,438 INFO (ProduceService.java:43)- 生产者生产第35个商品
+2020-09-16 23:50:05,439 INFO (ConsumerService.java:42)- 消费者消费商品=35
+2020-09-16 23:50:05,439 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:50:05,439 INFO (ProduceService.java:43)- 生产者生产第36个商品
+2020-09-16 23:50:05,439 INFO (ProduceService.java:43)- 生产者生产第37个商品
+2020-09-16 23:50:05,440 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:50:05,440 INFO (ConsumerService.java:42)- 消费者消费商品=36
+2020-09-16 23:50:05,440 INFO (ConsumerService.java:42)- 消费者消费商品=37
+2020-09-16 23:50:05,441 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:50:05,441 INFO (ProduceService.java:43)- 生产者生产第38个商品
+2020-09-16 23:50:05,441 INFO (ProduceService.java:43)- 生产者生产第39个商品
+2020-09-16 23:50:05,441 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:50:05,442 INFO (ConsumerService.java:42)- 消费者消费商品=38
+2020-09-16 23:50:05,442 INFO (ConsumerService.java:42)- 消费者消费商品=39
+2020-09-16 23:50:05,442 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:50:05,442 INFO (ProduceService.java:43)- 生产者生产第40个商品
+2020-09-16 23:50:05,443 INFO (ProduceService.java:43)- 生产者生产第41个商品
+2020-09-16 23:50:05,443 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:50:05,443 INFO (ConsumerService.java:42)- 消费者消费商品=40
+2020-09-16 23:50:05,443 INFO (ConsumerService.java:42)- 消费者消费商品=41

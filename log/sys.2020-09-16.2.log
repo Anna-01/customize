@@ -1,0 +1,8 @@
+2020-09-16 23:24:38,258 INFO (StartupInfoLogger.java:61)- Started ConsumerAndProducerTest in 9.624 seconds (JVM running for 17.76)
+2020-09-16 23:35:58,889 INFO (StartupInfoLogger.java:55)- Starting ConsumerAndProducerTest on SKY-20200628CJA with PID 15044 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-16 23:35:58,893 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-16 23:35:58,896 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-16 23:36:05,450 INFO (StartupInfoLogger.java:61)- Started ConsumerAndProducerTest in 7.341 seconds (JVM running for 10.293)
+2020-09-16 23:44:29,349 INFO (StartupInfoLogger.java:55)- Starting ConsumerAndProducerTest on SKY-20200628CJA with PID 17160 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-16 23:44:29,360 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-16 23:44:29,374 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default

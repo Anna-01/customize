@@ -1,0 +1,16 @@
+2020-09-16 23:44:36,899 INFO (ConsumerService.java:42)- 消费者消费商品=10
+2020-09-16 23:44:36,904 INFO (ConsumerService.java:42)- 消费者消费商品=11
+2020-09-16 23:44:36,904 INFO (ConsumerService.java:42)- 消费者消费商品=12
+2020-09-16 23:44:36,905 INFO (ConsumerService.java:42)- 消费者消费商品=13
+2020-09-16 23:44:36,905 INFO (ConsumerService.java:42)- 消费者消费商品=14
+2020-09-16 23:44:36,905 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:44:36,905 INFO (ConsumerService.java:42)- 消费者消费商品=15
+2020-09-16 23:44:36,906 INFO (ConsumerService.java:42)- 消费者消费商品=16
+2020-09-16 23:44:36,906 INFO (ConsumerService.java:42)- 消费者消费商品=17
+2020-09-16 23:44:36,907 INFO (ConsumerService.java:42)- 消费者消费商品=18
+2020-09-16 23:44:36,907 INFO (ConsumerService.java:42)- 消费者消费商品=19
+2020-09-16 23:44:36,907 INFO (ConsumerService.java:42)- 消费者消费商品=20
+2020-09-16 23:44:36,908 INFO (ConsumerService.java:42)- 消费者消费商品=21
+2020-09-16 23:44:36,908 INFO (ConsumerService.java:42)- 消费者消费商品=22
+2020-09-16 23:44:36,908 INFO (ConsumerService.java:42)- 消费者消费商品=23
+2020-09-16 23:44:36,909 INFO (ConsumerService.java:42)- 消费者消费商品=24

@@ -1,0 +1,66 @@
+2020-09-16 23:49:23,114 INFO (ProduceService.java:43)- 生产者生产第116个商品
+2020-09-16 23:49:23,120 INFO (ProduceService.java:43)- 生产者生产第117个商品
+2020-09-16 23:49:23,121 INFO (ProduceService.java:43)- 生产者生产第118个商品
+2020-09-16 23:49:23,121 INFO (ProduceService.java:43)- 生产者生产第119个商品
+2020-09-16 23:49:23,121 INFO (ProduceService.java:43)- 生产者生产第120个商品
+2020-09-16 23:49:23,122 INFO (ProduceService.java:43)- 生产者生产第121个商品
+2020-09-16 23:49:23,122 INFO (ProduceService.java:43)- 生产者生产第122个商品
+2020-09-16 23:49:23,122 INFO (ProduceService.java:43)- 生产者生产第123个商品
+2020-09-16 23:49:23,122 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:49:23,123 INFO (ConsumerService.java:42)- 消费者消费商品=114
+2020-09-16 23:49:23,124 INFO (ConsumerService.java:42)- 消费者消费商品=115
+2020-09-16 23:49:23,125 INFO (ConsumerService.java:42)- 消费者消费商品=116
+2020-09-16 23:49:23,125 INFO (ConsumerService.java:42)- 消费者消费商品=117
+2020-09-16 23:49:23,125 INFO (ConsumerService.java:42)- 消费者消费商品=118
+2020-09-16 23:49:23,125 INFO (ConsumerService.java:42)- 消费者消费商品=119
+2020-09-16 23:49:23,126 INFO (ConsumerService.java:42)- 消费者消费商品=120
+2020-09-16 23:49:23,126 INFO (ConsumerService.java:42)- 消费者消费商品=121
+2020-09-16 23:49:23,126 INFO (ConsumerService.java:42)- 消费者消费商品=122
+2020-09-16 23:49:23,126 INFO (ConsumerService.java:42)- 消费者消费商品=123
+2020-09-16 23:49:23,126 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:49:23,127 INFO (ProduceService.java:43)- 生产者生产第124个商品
+2020-09-16 23:49:23,127 INFO (ProduceService.java:43)- 生产者生产第125个商品
+2020-09-16 23:49:23,127 INFO (ProduceService.java:43)- 生产者生产第126个商品
+2020-09-16 23:49:23,127 INFO (ProduceService.java:43)- 生产者生产第127个商品
+2020-09-16 23:49:23,127 INFO (ProduceService.java:43)- 生产者生产第128个商品
+2020-09-16 23:49:23,128 INFO (ProduceService.java:43)- 生产者生产第129个商品
+2020-09-16 23:49:23,128 INFO (ProduceService.java:43)- 生产者生产第130个商品
+2020-09-16 23:49:23,128 INFO (ProduceService.java:43)- 生产者生产第131个商品
+2020-09-16 23:49:23,128 INFO (ProduceService.java:43)- 生产者生产第132个商品
+2020-09-16 23:49:23,128 INFO (ProduceService.java:43)- 生产者生产第133个商品
+2020-09-16 23:49:23,128 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:49:23,129 INFO (ConsumerService.java:42)- 消费者消费商品=124
+2020-09-16 23:49:23,129 INFO (ConsumerService.java:42)- 消费者消费商品=125
+2020-09-16 23:49:23,129 INFO (ConsumerService.java:42)- 消费者消费商品=126
+2020-09-16 23:49:23,129 INFO (ConsumerService.java:42)- 消费者消费商品=127
+2020-09-16 23:49:23,130 INFO (ConsumerService.java:42)- 消费者消费商品=128
+2020-09-16 23:49:23,130 INFO (ConsumerService.java:42)- 消费者消费商品=129
+2020-09-16 23:49:23,130 INFO (ConsumerService.java:42)- 消费者消费商品=130
+2020-09-16 23:49:23,130 INFO (ConsumerService.java:42)- 消费者消费商品=131
+2020-09-16 23:49:23,130 INFO (ConsumerService.java:42)- 消费者消费商品=132
+2020-09-16 23:49:23,131 INFO (ConsumerService.java:42)- 消费者消费商品=133
+2020-09-16 23:49:23,131 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:49:23,131 INFO (ProduceService.java:43)- 生产者生产第134个商品
+2020-09-16 23:49:23,131 INFO (ProduceService.java:43)- 生产者生产第135个商品
+2020-09-16 23:49:23,132 INFO (ProduceService.java:43)- 生产者生产第136个商品
+2020-09-16 23:49:23,132 INFO (ProduceService.java:43)- 生产者生产第137个商品
+2020-09-16 23:49:23,134 INFO (ProduceService.java:43)- 生产者生产第138个商品
+2020-09-16 23:49:23,134 INFO (ProduceService.java:43)- 生产者生产第139个商品
+2020-09-16 23:49:23,134 INFO (ProduceService.java:43)- 生产者生产第140个商品
+2020-09-16 23:49:23,135 INFO (ProduceService.java:43)- 生产者生产第141个商品
+2020-09-16 23:49:23,135 INFO (ProduceService.java:43)- 生产者生产第142个商品
+2020-09-16 23:49:23,135 INFO (ProduceService.java:43)- 生产者生产第143个商品
+2020-09-16 23:49:23,135 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:49:23,136 INFO (ConsumerService.java:42)- 消费者消费商品=134
+2020-09-16 23:49:23,137 INFO (ConsumerService.java:42)- 消费者消费商品=135
+2020-09-16 23:49:23,137 INFO (ConsumerService.java:42)- 消费者消费商品=136
+2020-09-16 23:49:23,139 INFO (ConsumerService.java:42)- 消费者消费商品=137
+2020-09-16 23:49:23,140 INFO (ConsumerService.java:42)- 消费者消费商品=138
+2020-09-16 23:49:23,140 INFO (ConsumerService.java:42)- 消费者消费商品=139
+2020-09-16 23:49:23,141 INFO (ConsumerService.java:42)- 消费者消费商品=140
+2020-09-16 23:49:23,141 INFO (ConsumerService.java:42)- 消费者消费商品=141
+2020-09-16 23:49:23,141 INFO (ConsumerService.java:42)- 消费者消费商品=142
+2020-09-16 23:49:23,141 INFO (ConsumerService.java:42)- 消费者消费商品=143
+2020-09-16 23:49:58,717 INFO (StartupInfoLogger.java:55)- Starting ConsumerAndProducerTest on SKY-20200628CJA with PID 11564 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-16 23:49:58,720 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-16 23:49:58,722 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default

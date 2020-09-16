@@ -1,0 +1,44 @@
+2020-09-07 14:21:32,616 INFO (SafeMap.java:24)- Thread-81setKeyWait
+2020-09-07 14:21:32,618 INFO (SafeMap.java:24)- Thread-54setKeyWait
+2020-09-07 14:21:32,619 INFO (SafeMap.java:24)- Thread-98setKeyWait
+2020-09-07 14:21:32,619 INFO (SafeMap.java:24)- Thread-29setKeyWait
+2020-09-07 14:21:32,619 INFO (SafeMap.java:24)- Thread-24setKeyWait
+2020-09-07 14:21:32,619 INFO (SafeMap.java:24)- Thread-57setKeyWait
+2020-09-07 14:21:32,619 INFO (SafeMap.java:24)- Thread-25setKeyWait
+2020-09-07 14:21:32,619 INFO (SafeMap.java:24)- Thread-92setKeyWait
+2020-09-07 14:21:32,620 INFO (SafeMap.java:24)- Thread-93setKeyWait
+2020-09-07 14:21:32,620 INFO (SafeMap.java:24)- Thread-94setKeyWait
+2020-09-07 14:21:32,620 INFO (SafeMap.java:24)- Thread-62setKeyWait
+2020-09-07 14:21:32,620 INFO (SafeMap.java:24)- Thread-71setKeyWait
+2020-09-07 14:21:32,620 INFO (SafeMap.java:24)- Thread-65setKeyWait
+2020-09-07 14:21:32,620 INFO (SafeMap.java:24)- Thread-86setKeyWait
+2020-09-07 14:21:32,621 INFO (SafeMap.java:24)- Thread-42setKeyWait
+2020-09-07 14:21:32,621 INFO (SafeMap.java:24)- Thread-12setKeyWait
+2020-09-07 14:21:32,621 INFO (SafeMap.java:24)- Thread-43setKeyWait
+2020-09-07 14:21:32,621 INFO (SafeMap.java:24)- Thread-78setKeyWait
+2020-09-07 14:21:32,621 INFO (SafeMap.java:24)- Thread-48setKeyWait
+2020-09-07 14:21:32,621 INFO (SafeMap.java:24)- Thread-88setKeyWait
+2020-09-07 14:21:32,622 INFO (SafeMap.java:24)- Thread-59setKeyWait
+2020-09-07 14:21:32,622 INFO (SafeMap.java:24)- Thread-50setKeyWait
+2020-09-07 14:21:32,622 INFO (SafeMap.java:24)- Thread-91setKeyWait
+2020-09-07 14:21:32,622 INFO (SafeMap.java:24)- Thread-34setKeyWait
+2020-09-07 14:21:32,622 INFO (SafeMap.java:24)- Thread-4setKeyWait
+2020-09-07 14:21:32,622 INFO (SafeMap.java:24)- Thread-39setKeyWait
+2020-09-07 14:21:32,622 INFO (SafeMap.java:24)- Thread-96setKeyWait
+2020-09-07 14:21:32,623 INFO (SafeMap.java:24)- Thread-73setKeyWait
+2020-09-07 14:21:32,623 INFO (SafeMap.java:24)- Thread-16setKeyWait
+2020-09-07 14:21:32,623 INFO (SafeMap.java:24)- Thread-33setKeyWait
+2020-09-07 14:21:32,623 INFO (SafeMap.java:24)- Thread-52setKeyWait
+2020-09-07 14:21:32,623 INFO (SafeMap.java:24)- Thread-56setKeyWait
+2020-09-07 14:21:32,623 INFO (SafeMap.java:24)- Thread-5setKeyWait
+2020-09-07 14:21:32,624 INFO (SafeMap.java:24)- Thread-69setKeyWait
+2020-09-07 14:21:32,624 INFO (SafeMap.java:24)- Thread-90setKeyWait
+2020-09-07 14:21:32,624 INFO (SafeMap.java:24)- Thread-32setKeyWait
+2020-09-07 14:21:32,624 INFO (SafeMap.java:24)- Thread-37setKeyWait
+2020-09-07 14:21:32,624 INFO (SafeMap.java:24)- Thread-100setKeyWait
+2020-09-07 14:21:32,624 INFO (SafeMap.java:24)- Thread-85setKeyWait
+2020-09-07 14:21:32,625 INFO (SafeMap.java:24)- Thread-47setKeyWait
+2020-09-07 14:21:32,625 INFO (SafeMap.java:24)- Thread-84setKeyWait
+2020-09-07 14:22:20,429 INFO (StartupInfoLogger.java:55)- Starting CountDownTest on SKY-20200628CJA with PID 1952 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 14:22:20,430 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 14:22:20,431 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default

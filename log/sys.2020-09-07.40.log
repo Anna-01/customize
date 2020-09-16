@@ -1,0 +1,29 @@
+2020-09-07 13:57:07,356 INFO (SafeMap.java:64)- Thread-200
+2020-09-07 13:57:07,359 INFO (SafeMap.java:25)- Thread-20notify
+2020-09-07 13:57:07,360 INFO (SafeMap.java:54)- Thread-190
+2020-09-07 13:57:07,360 INFO (SafeMap.java:64)- Thread-110
+2020-09-07 13:57:07,360 INFO (SafeMap.java:64)- Thread-40
+2020-09-07 13:57:07,360 INFO (SafeMap.java:64)- Thread-200
+2020-09-07 13:57:07,398 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-21, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:57:07,403 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-2, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:57:07,407 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-13, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:57:07,406 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-16, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:57:07,409 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-4, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:57:07,403 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-14, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:57:07,401 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-8, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:57:07,401 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-17, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:57:07,399 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-5, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:57:07,401 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-7, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:57:07,404 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-9, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:57:07,403 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-6, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:57:07,401 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-3, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:57:07,411 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-12, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:57:07,404 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-19, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:57:07,400 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-20, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:57:07,412 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-11, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:57:07,404 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-10, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:57:07,400 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-18, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:57:07,399 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-15, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:59:34,671 INFO (StartupInfoLogger.java:55)- Starting CountDownTest on SKY-20200628CJA with PID 13000 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 13:59:34,673 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 13:59:34,674 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default

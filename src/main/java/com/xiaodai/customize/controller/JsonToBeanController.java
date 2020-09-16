@@ -2,7 +2,7 @@ package com.xiaodai.customize.controller;
 
 import com.xiaodai.customize.annotation.JsonAnnotation;
 import com.xiaodai.customize.controller.po.Men;
-import com.xiaodai.customize.service.JsonToBeanService;
+import com.xiaodai.customize.service.json.JsonToBeanService;
 import org.springframework.stereotype.Controller;
 
 import javax.annotation.PostConstruct;

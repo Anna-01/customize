@@ -1,0 +1,13 @@
+2020-09-07 14:27:34,405 INFO (StartupInfoLogger.java:61)- Started CountDownTest in 4.009 seconds (JVM running for 5.44)
+2020-09-07 14:27:34,525 INFO (SafeMap.java:25)- Thread-6setKeyWait
+2020-09-07 14:27:34,526 INFO (SafeMap.java:25)- Thread-5setKeyWait
+2020-09-07 14:27:34,526 INFO (SafeMap.java:25)- Thread-3setKeyWait
+2020-09-07 14:27:34,526 INFO (SafeMap.java:25)- Thread-4setKeyWait
+2020-09-07 14:27:34,526 INFO (SafeMap.java:25)- Thread-2setKeyWait
+2020-09-07 14:28:22,701 INFO (StartupInfoLogger.java:55)- Starting CountDownTest on SKY-20200628CJA with PID 23420 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 14:28:22,702 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 14:28:22,704 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-07 14:28:26,200 INFO (StartupInfoLogger.java:61)- Started CountDownTest in 3.846 seconds (JVM running for 5.261)
+2020-09-07 14:28:26,326 INFO (SafeMap.java:25)- Thread-3setKeyWait
+2020-09-07 14:28:26,327 INFO (SafeMap.java:51)- map的size=1
+2020-09-07 14:28:26,328 INFO (SafeMap.java:55)- Thread-3getKeyWait

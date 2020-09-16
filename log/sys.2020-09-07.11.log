@@ -1,0 +1,16 @@
+2020-09-07 11:50:01,285 INFO (SafeMap.java:48)- Thread-2notify
+2020-09-07 11:50:01,290 INFO (SafeMap.java:25)- Thread-2notify
+2020-09-07 11:50:01,291 INFO (SafeMap.java:48)- Thread-2notify
+2020-09-07 11:50:01,291 INFO (SafeMap.java:53)- Thread-3wait
+2020-09-07 11:50:01,291 INFO (SafeMap.java:53)- Thread-4wait
+2020-09-07 11:50:01,318 INFO (JsonToJsonAop.java:62)- json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 11:50:01,428 INFO (SafeMap.java:25)- Thread-5notify
+2020-09-07 11:50:01,428 INFO (SafeMap.java:29)- Thread-3wait
+2020-09-07 11:50:01,428 INFO (SafeMap.java:29)- Thread-7wait
+2020-09-07 11:50:01,429 INFO (SafeMap.java:29)- Thread-6wait
+2020-09-07 11:50:01,429 INFO (SafeMap.java:48)- Thread-5notify
+2020-09-07 11:50:01,434 INFO (SafeMap.java:25)- Thread-5notify
+2020-09-07 11:50:01,434 INFO (SafeMap.java:29)- Thread-4wait
+2020-09-07 11:50:01,434 INFO (SafeMap.java:48)- Thread-3notify
+2020-09-07 11:50:01,434 INFO (SafeMap.java:53)- Thread-5wait
+2020-09-07 11:50:01,435 INFO (JsonToJsonAop.java:62)- json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}

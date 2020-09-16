@@ -1,0 +1,12 @@
+2020-09-11 09:56:46,180 INFO (StartupInfoLogger.java:55)- Starting CustomizeApplication on SKY-20200628CJA with PID 17012 (C:\Users\My\IdeaProjects\customize\target\classes started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-11 09:56:46,189 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-11 09:56:46,190 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-11 09:56:48,711 INFO (StartupInfoLogger.java:61)- Started CustomizeApplication in 3.057 seconds (JVM running for 4.55)
+2020-09-11 10:23:59,168 INFO (StartupInfoLogger.java:55)- Starting SqlTest on SKY-20200628CJA with PID 1932 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-11 10:23:59,169 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-11 10:23:59,170 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-11 10:24:03,084 INFO (StartupInfoLogger.java:61)- Started SqlTest in 4.278 seconds (JVM running for 6.212)
+2020-09-11 10:24:03,461 INFO (SqlTest.java:34)- 结果{"name":"覆盖","age":"11"}
+2020-09-11 15:47:12,916 INFO (StartupInfoLogger.java:55)- Starting SqlTest on SKY-20200628CJA with PID 27608 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-11 15:47:12,917 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-11 15:47:12,918 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default

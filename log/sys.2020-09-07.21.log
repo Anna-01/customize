@@ -1,0 +1,19 @@
+2020-09-07 12:38:52,397 INFO (SafeMap.java:53)- Thread-4wait
+2020-09-07 12:38:52,436 INFO (JsonToJsonAop.java:67)- json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 12:38:52,552 INFO (SafeMap.java:25)- Thread-7notify
+2020-09-07 12:38:52,552 INFO (SafeMap.java:29)- Thread-2wait
+2020-09-07 12:38:52,553 INFO (SafeMap.java:29)- Thread-6wait
+2020-09-07 12:38:52,553 INFO (SafeMap.java:29)- Thread-5wait
+2020-09-07 12:38:52,553 INFO (SafeMap.java:48)- Thread-7notify
+2020-09-07 12:38:52,554 INFO (SafeMap.java:25)- Thread-7notify
+2020-09-07 12:38:52,554 INFO (SafeMap.java:48)- Thread-7notify
+2020-09-07 12:38:52,554 INFO (JsonToJsonAop.java:67)- json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 12:38:52,554 INFO (SafeMap.java:25)- Thread-4notify
+2020-09-07 12:38:52,559 INFO (SafeMap.java:48)- Thread-4notify
+2020-09-07 12:38:52,559 INFO (SafeMap.java:53)- Thread-6wait
+2020-09-07 12:38:52,559 INFO (JsonToJsonAop.java:67)- json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 12:38:52,559 INFO (SafeMap.java:53)- Thread-2wait
+2020-09-07 12:38:52,560 INFO (SafeMap.java:53)- Thread-5wait
+2020-09-07 12:41:42,912 INFO (StartupInfoLogger.java:55)- Starting CustomizeApplicationTests on SKY-20200628CJA with PID 4620 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 12:41:42,914 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 12:41:42,915 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default

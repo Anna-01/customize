@@ -1,12 +1,13 @@
 package com.xiaodai.customize;
 
-import com.xiaodai.customize.service.JsonToBeanService;
+import com.xiaodai.customize.service.json.JsonToBeanService;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
+import java.util.Date;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -16,13 +17,13 @@ public class CountDownTest {
 
     @Resource
     private JsonToBeanService jsonToBeanService;
-
+    public static Date date = new Date();
     //并发数
-    private static final int threadNum = 5;
+    private static final int threadNum = 30;
     //倒计时数 发令枪 用于制造线程的并发执行
     private static CountDownLatch cdl = new CountDownLatch(threadNum);
 
-    public static final String jstring = "{\"name\":\"lijiaxing\",\"age\":\"11\", \"date\":\"2020-01-18-13\"}";
+    public static final String jstring = "{\"name\":\"lijiaxing\",\"age\":\"11\", \"creatTime\":\"" + date + "\"}";
 
 
     /**
@@ -76,7 +77,7 @@ public class CountDownTest {
      */
     @Test
     @PostConstruct
-    public void test() {
+    public void testConcurrent() {
         for(int i = 0;i< threadNum;i++) {
             //new多个子线程
             new Thread(new ThreadClass(jsonToBeanService)).start();

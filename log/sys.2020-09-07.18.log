@@ -1,0 +1,10 @@
+2020-09-07 12:36:33,483 INFO (JsonToJsonAop.java:67)- json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 12:36:33,483 INFO (SafeMap.java:53)- Thread-2wait
+2020-09-07 12:36:33,486 INFO (JsonToBeanService.java:24)- 转换结果=Men(name=lijiaxing, age=11, high=0, fix=false, creatTime=0)
+2020-09-07 12:37:45,376 INFO (StartupInfoLogger.java:55)- Starting CustomizeApplicationTests on SKY-20200628CJA with PID 23368 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 12:37:45,378 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 12:37:45,379 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-07 12:37:48,947 INFO (StartupInfoLogger.java:61)- Started CustomizeApplicationTests in 3.938 seconds (JVM running for 5.361)
+2020-09-07 12:37:49,070 INFO (SafeMap.java:25)- Thread-3notify
+2020-09-07 12:37:49,071 INFO (SafeMap.java:29)- Thread-2wait
+2020-09-07 12:37:49,071 INFO (SafeMap.java:29)- Thread-4wait

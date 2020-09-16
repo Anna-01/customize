@@ -1,0 +1,11 @@
+2020-09-07 14:37:25,934 INFO (StartupInfoLogger.java:61)- Started CountDownTest in 4.042 seconds (JVM running for 5.452)
+2020-09-07 14:37:26,063 INFO (SafeMap.java:25)- Thread-4setKeyWait
+2020-09-07 14:37:26,065 INFO (SafeMap.java:51)- map的size=1
+2020-09-07 14:37:26,065 INFO (SafeMap.java:56)- Thread-4getKeyWait
+2020-09-07 14:37:26,065 INFO (SafeMap.java:25)- Thread-4setKeyWait
+2020-09-07 14:37:26,065 INFO (SafeMap.java:51)- map的size=1
+2020-09-07 14:37:26,066 INFO (SafeMap.java:56)- Thread-4getKeyWait
+2020-09-07 14:37:26,089 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-4, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:38:49,735 INFO (StartupInfoLogger.java:55)- Starting CountDownTest on SKY-20200628CJA with PID 15696 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 14:38:49,741 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 14:38:49,742 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default

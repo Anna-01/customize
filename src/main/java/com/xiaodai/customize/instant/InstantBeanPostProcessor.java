@@ -1,13 +1,15 @@
 package com.xiaodai.customize.instant;
 
-import com.xiaodai.customize.service.JsonToBeanService;
+import com.xiaodai.customize.service.json.JsonToBeanService;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
-import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 
 /**
+ * spring web项目下，可能会造成二次执行，因为此时系统会存在两个容器
+ * 一个是spring容器本身的root application context  另一个是serverlet context 容器 （为spring的子容器）
+ * 可用if(event.getApplicationContext().getParent()==null) 条件规避
  * 监听容器初始化事件
  * @author My
  */
@@ -17,6 +19,7 @@ public class InstantBeanPostProcessor implements ApplicationListener<ContextRefr
     @Resource
     public JsonToBeanService jsonToBeanService;
     /**
+     * 创建Bean->Bean的属性注入->Bean初始化->Bean销毁
      * 容器初始换完成后执行此代码
      * @param event
      */

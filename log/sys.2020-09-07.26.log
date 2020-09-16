@@ -1,0 +1,10 @@
+2020-09-07 12:49:26,932 INFO (JsonToJsonAop.java:67)- json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 12:49:26,931 INFO (JsonToJsonAop.java:67)- json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 12:49:26,932 INFO (JsonToJsonAop.java:67)- json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 12:55:13,867 INFO (StartupInfoLogger.java:55)- Starting CustomizeApplicationTests on SKY-20200628CJA with PID 14340 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 12:55:13,869 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 12:55:13,874 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-07 12:55:17,500 INFO (StartupInfoLogger.java:61)- Started CustomizeApplicationTests in 4.05 seconds (JVM running for 5.468)
+2020-09-07 12:55:17,640 INFO (JsonToJsonAop.java:67)- json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 12:55:17,640 INFO (JsonToJsonAop.java:67)- json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 12:55:17,640 INFO (JsonToJsonAop.java:67)- json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}

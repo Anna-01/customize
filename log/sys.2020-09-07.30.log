@@ -1,0 +1,86 @@
+2020-09-07 13:00:12,249 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-10, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:00:12,249 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-8, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:00:12,262 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-9, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:00:45,109 INFO (StartupInfoLogger.java:55)- Starting CustomizeApplicationTests on SKY-20200628CJA with PID 18920 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 13:00:45,110 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 13:00:45,115 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-07 13:00:48,836 INFO (StartupInfoLogger.java:61)- Started CustomizeApplicationTests in 4.15 seconds (JVM running for 5.774)
+2020-09-07 13:00:48,970 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-4, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:00:48,970 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-2, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:00:48,970 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-3, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:00:49,117 INFO (JsonToJsonAop.java:67)- 当前线程=main, json转换结果result={"high":0,"creatTime":1599454844000,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:04:41,397 INFO (StartupInfoLogger.java:55)- Starting CustomizeApplicationTests on SKY-20200628CJA with PID 8464 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 13:04:41,398 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 13:04:41,399 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-07 13:04:45,398 INFO (StartupInfoLogger.java:61)- Started CustomizeApplicationTests in 4.31 seconds (JVM running for 5.737)
+2020-09-07 13:04:45,589 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-2, json转换结果result={"high":0,"creatTime":1599455081000,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:04:45,589 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-3, json转换结果result={"high":0,"creatTime":1599455081000,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:04:45,589 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-4, json转换结果result={"high":0,"creatTime":1599455081000,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:04:45,709 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-7, json转换结果result={"high":0,"creatTime":1599455081000,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:04:45,708 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-5, json转换结果result={"high":0,"creatTime":1599455081000,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:04:45,710 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-6, json转换结果result={"high":0,"creatTime":1599455081000,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:06:26,487 INFO (StartupInfoLogger.java:55)- Starting CustomizeApplicationTests on SKY-20200628CJA with PID 24444 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 13:06:26,488 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 13:06:26,489 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-07 13:06:30,024 INFO (StartupInfoLogger.java:61)- Started CustomizeApplicationTests in 4.084 seconds (JVM running for 5.587)
+2020-09-07 13:06:30,262 INFO (CustomizeApplicationTests.java:38)- 多线程解析json开始
+2020-09-07 13:06:55,637 INFO (StartupInfoLogger.java:55)- Starting CustomizeApplicationTests on SKY-20200628CJA with PID 19348 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 13:06:55,638 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 13:06:55,639 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-07 13:06:59,479 INFO (StartupInfoLogger.java:61)- Started CustomizeApplicationTests in 4.249 seconds (JVM running for 5.846)
+2020-09-07 13:06:59,645 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-4, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:06:59,645 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-2, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:06:59,646 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-3, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:06:59,830 INFO (CustomizeApplicationTests.java:38)- 多线程解析json开始
+2020-09-07 13:31:16,299 INFO (StartupInfoLogger.java:55)- Starting CountDownTest on SKY-20200628CJA with PID 31600 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 13:31:16,300 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 13:31:16,312 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-07 13:31:20,236 INFO (StartupInfoLogger.java:61)- Started CountDownTest in 4.663 seconds (JVM running for 6.122)
+2020-09-07 13:32:23,140 INFO (StartupInfoLogger.java:55)- Starting CountDownTest on SKY-20200628CJA with PID 16392 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 13:32:23,141 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 13:32:23,142 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-07 13:32:26,689 INFO (StartupInfoLogger.java:61)- Started CountDownTest in 4.1 seconds (JVM running for 5.611)
+2020-09-07 13:41:53,193 INFO (StartupInfoLogger.java:55)- Starting CountDownTest on SKY-20200628CJA with PID 27364 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 13:41:53,194 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 13:41:53,195 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-07 13:41:56,847 INFO (StartupInfoLogger.java:61)- Started CountDownTest in 4.194 seconds (JVM running for 5.728)
+2020-09-07 13:41:56,994 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-3, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:41:56,994 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-2, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:41:56,994 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-4, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:41:57,196 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-5, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:41:57,196 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-7, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:41:57,196 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-6, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:43:12,682 INFO (StartupInfoLogger.java:55)- Starting CountDownTest on SKY-20200628CJA with PID 30184 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 13:43:12,683 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 13:43:12,683 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-07 13:43:16,202 INFO (StartupInfoLogger.java:61)- Started CountDownTest in 3.936 seconds (JVM running for 5.629)
+2020-09-07 13:43:16,352 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-4, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:43:16,352 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-2, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:43:16,352 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-3, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:45:01,060 INFO (StartupInfoLogger.java:55)- Starting CountDownTest on SKY-20200628CJA with PID 31776 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 13:45:01,062 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 13:45:01,063 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-07 13:45:04,614 INFO (StartupInfoLogger.java:61)- Started CountDownTest in 4.049 seconds (JVM running for 5.666)
+2020-09-07 13:45:04,800 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-10, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:45:04,804 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-14, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:45:04,804 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-18, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:45:04,805 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-17, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:45:04,805 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-20, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:45:04,803 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-6, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:45:04,800 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-13, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:45:04,806 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-12, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:45:04,802 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-8, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:45:04,800 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-21, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:45:04,802 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-5, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:45:04,800 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-2, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:45:04,800 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-15, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:45:04,804 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-19, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:45:04,800 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-3, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:45:04,800 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-7, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:45:04,810 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-16, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:45:04,809 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-9, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:45:04,808 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-4, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:45:04,807 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-11, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:49:53,761 INFO (StartupInfoLogger.java:55)- Starting CountDownTest on SKY-20200628CJA with PID 31316 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 13:49:53,764 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 13:49:53,766 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default

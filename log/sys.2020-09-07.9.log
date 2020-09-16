@@ -1,0 +1,20 @@
+2020-09-07 11:48:46,286 INFO (StartupInfoLogger.java:61)- Started CustomizeApplicationTests in 3.964 seconds (JVM running for 5.449)
+2020-09-07 11:48:46,433 INFO (SafeMap.java:25)- Thread-4notify
+2020-09-07 11:48:46,434 INFO (SafeMap.java:29)- Thread-2wait
+2020-09-07 11:48:46,434 INFO (SafeMap.java:29)- Thread-3wait
+2020-09-07 11:48:46,435 INFO (SafeMap.java:48)- Thread-4notify
+2020-09-07 11:48:46,435 INFO (SafeMap.java:25)- Thread-4notify
+2020-09-07 11:48:46,435 INFO (SafeMap.java:48)- Thread-4notify
+2020-09-07 11:48:46,435 INFO (SafeMap.java:53)- Thread-3wait
+2020-09-07 11:48:46,436 INFO (SafeMap.java:53)- Thread-2wait
+2020-09-07 11:48:46,461 INFO (JsonToJsonAop.java:62)- json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"null"}
+2020-09-07 11:48:46,572 INFO (SafeMap.java:25)- Thread-5notify
+2020-09-07 11:48:46,572 INFO (SafeMap.java:29)- Thread-3wait
+2020-09-07 11:48:46,573 INFO (SafeMap.java:29)- Thread-7wait
+2020-09-07 11:48:46,574 INFO (SafeMap.java:29)- Thread-6wait
+2020-09-07 11:48:46,574 INFO (SafeMap.java:48)- Thread-5notify
+2020-09-07 11:48:46,574 INFO (SafeMap.java:25)- Thread-5notify
+2020-09-07 11:48:46,575 INFO (SafeMap.java:48)- Thread-5notify
+2020-09-07 11:48:46,575 INFO (JsonToJsonAop.java:62)- json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"null"}
+2020-09-07 11:48:46,575 INFO (SafeMap.java:25)- Thread-2notify
+2020-09-07 11:48:46,576 INFO (SafeMap.java:48)- Thread-2notify

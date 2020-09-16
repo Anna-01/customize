@@ -1,0 +1,16 @@
+2020-09-07 14:28:26,328 INFO (SafeMap.java:25)- Thread-3setKeyWait
+2020-09-07 14:28:26,336 INFO (SafeMap.java:51)- map的size=1
+2020-09-07 14:28:26,336 INFO (SafeMap.java:55)- Thread-3getKeyWait
+2020-09-07 14:28:26,336 INFO (SafeMap.java:35)- Thread-4setKeyNotify
+2020-09-07 14:28:26,337 INFO (SafeMap.java:51)- map的size=0
+2020-09-07 14:28:26,337 INFO (SafeMap.java:64)- Thread-4getKeyNotify
+2020-09-07 14:28:26,338 INFO (SafeMap.java:35)- Thread-2setKeyNotify
+2020-09-07 14:28:26,338 INFO (SafeMap.java:51)- map的size=0
+2020-09-07 14:28:26,339 INFO (SafeMap.java:64)- Thread-2getKeyNotify
+2020-09-07 14:28:26,339 INFO (SafeMap.java:35)- Thread-5setKeyNotify
+2020-09-07 14:28:26,340 INFO (SafeMap.java:51)- map的size=0
+2020-09-07 14:28:26,340 INFO (SafeMap.java:64)- Thread-5getKeyNotify
+2020-09-07 14:28:26,372 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-3, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:29:48,020 INFO (StartupInfoLogger.java:55)- Starting CountDownTest on SKY-20200628CJA with PID 15156 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 14:29:48,021 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 14:29:48,022 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default

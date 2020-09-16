@@ -1,6 +1,5 @@
-package com.xiaodai.customize.service;
+package com.xiaodai.customize.service.json;
 
-import com.alibaba.fastjson.JSONObject;
 import com.xiaodai.customize.annotation.JsonAnnotation;
 import com.xiaodai.customize.aop.JsonToJsonAop;
 import com.xiaodai.customize.controller.po.Men;
@@ -21,7 +20,7 @@ public class JsonToBeanService {
     @JsonAnnotation(toBean = Men.class)
     public void getJson(String sourceJson) {
 
-        Men men = (Men) JsonToJsonAop.resultMap.get(sourceJson);
-        logger.info("转换结果={}", men.toString());
+        JsonToJsonAop.resultMap.get(sourceJson);
+        //logger.info("转换结果={}", men.toString());
     }
 }

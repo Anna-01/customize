@@ -1,0 +1,19 @@
+2020-09-07 13:51:33,114 INFO (SafeMap.java:53)- Thread-15wait
+2020-09-07 13:51:33,118 INFO (SafeMap.java:53)- Thread-19wait
+2020-09-07 13:51:33,119 INFO (SafeMap.java:53)- Thread-2wait
+2020-09-07 13:51:33,119 INFO (SafeMap.java:53)- Thread-14wait
+2020-09-07 13:51:33,119 INFO (SafeMap.java:53)- Thread-11wait
+2020-09-07 13:51:33,119 INFO (SafeMap.java:53)- Thread-21wait
+2020-09-07 13:51:33,119 INFO (SafeMap.java:53)- Thread-10wait
+2020-09-07 13:51:33,120 INFO (SafeMap.java:53)- Thread-18wait
+2020-09-07 13:51:33,120 INFO (SafeMap.java:53)- Thread-9wait
+2020-09-07 13:51:33,120 INFO (SafeMap.java:53)- Thread-17wait
+2020-09-07 13:51:33,120 INFO (SafeMap.java:53)- Thread-20wait
+2020-09-07 13:51:33,121 INFO (SafeMap.java:53)- Thread-4wait
+2020-09-07 13:51:33,121 INFO (SafeMap.java:53)- Thread-8wait
+2020-09-07 13:51:33,121 INFO (SafeMap.java:53)- Thread-7wait
+2020-09-07 13:51:33,121 INFO (SafeMap.java:53)- Thread-5wait
+2020-09-07 13:51:33,141 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-3, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 13:52:33,758 INFO (StartupInfoLogger.java:55)- Starting CountDownTest on SKY-20200628CJA with PID 17748 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 13:52:33,759 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 13:52:33,760 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default

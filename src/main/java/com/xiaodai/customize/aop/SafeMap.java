@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import java.util.HashMap;
 
 /**
+ * 实现线程安全的map
  * @author My
  */
 public class SafeMap {
@@ -22,7 +23,7 @@ public class SafeMap {
         synchronized (safeMap) {
             if (safeMap.size() == 0) {
                 try {
-                    logger.info(Thread.currentThread().getName() + "setKeyWait");
+                    logger.info(Thread.currentThread().getName() + mName + "setKeyWait");
                     safeMap.put(mName, opator);
                     safeMap.wait();
 
@@ -31,7 +32,7 @@ public class SafeMap {
                 }
             } else {
                 try {
-                    logger.info(Thread.currentThread().getName() + "setKeyNotify");
+                    logger.info(Thread.currentThread().getName() + mName +"setKeyNotify");
                     safeMap.notify();
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -52,7 +53,7 @@ public class SafeMap {
                 if (safeMap.containsKey(mName)) {
                     try {
                         safeMap.remove(mName);
-                        logger.info(Thread.currentThread().getName() + "getKeyWait");
+                        logger.info(Thread.currentThread().getName() + mName + "getKeyWait");
                         safeMap.wait();
 
                     } catch (Exception e) {
@@ -61,7 +62,7 @@ public class SafeMap {
                 }
             } else {
                 try {
-                    logger.info(Thread.currentThread().getName() + "getKeyNotify");
+                    logger.info(Thread.currentThread().getName() + mName + "getKeyNotify");
                     safeMap.notify();
                 } catch (Exception e) {
                     e.printStackTrace();

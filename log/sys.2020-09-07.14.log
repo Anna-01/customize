@@ -1,0 +1,20 @@
+2020-09-07 12:35:23,051 INFO (StartupInfoLogger.java:61)- Started CustomizeApplicationTests in 4.004 seconds (JVM running for 5.443)
+2020-09-07 12:35:23,214 INFO (SafeMap.java:25)- Thread-3notify
+2020-09-07 12:35:23,215 INFO (SafeMap.java:29)- Thread-4wait
+2020-09-07 12:35:23,215 INFO (SafeMap.java:29)- Thread-2wait
+2020-09-07 12:35:23,215 INFO (SafeMap.java:48)- Thread-3notify
+2020-09-07 12:35:23,216 INFO (SafeMap.java:25)- Thread-3notify
+2020-09-07 12:35:23,216 INFO (SafeMap.java:48)- Thread-3notify
+2020-09-07 12:35:23,216 INFO (SafeMap.java:53)- Thread-4wait
+2020-09-07 12:35:23,217 INFO (SafeMap.java:53)- Thread-2wait
+2020-09-07 12:35:23,244 INFO (JsonToJsonAop.java:67)- json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 12:35:23,264 INFO (JsonToBeanService.java:24)- 转换结果=Men(name=lijiaxing, age=11, high=0, fix=false, creatTime=0)
+2020-09-07 12:35:23,376 INFO (SafeMap.java:25)- Thread-5notify
+2020-09-07 12:35:23,377 INFO (SafeMap.java:29)- Thread-4wait
+2020-09-07 12:35:23,377 INFO (SafeMap.java:29)- Thread-7wait
+2020-09-07 12:35:23,378 INFO (SafeMap.java:29)- Thread-6wait
+2020-09-07 12:35:23,378 INFO (SafeMap.java:48)- Thread-5notify
+2020-09-07 12:35:23,378 INFO (SafeMap.java:25)- Thread-5notify
+2020-09-07 12:35:23,378 INFO (SafeMap.java:29)- Thread-2wait
+2020-09-07 12:35:23,378 INFO (SafeMap.java:48)- Thread-5notify
+2020-09-07 12:35:23,379 INFO (SafeMap.java:53)- Thread-7wait

@@ -1,0 +1,10 @@
+2020-09-11 17:32:23,511 INFO (StartupInfoLogger.java:61)- Started RedisTest in 5.137 seconds (JVM running for 6.626)
+2020-09-11 17:32:25,942 INFO (RedisTest.java:24)- 输出结果日志测试
+2020-09-11 17:32:25,942 INFO (RedisTest.java:25)- 输出结果测试 s=测试0
+2020-09-11 17:33:54,862 INFO (StartupInfoLogger.java:55)- Starting RedisTest on SKY-20200628CJA with PID 29828 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-11 17:33:54,863 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-11 17:33:54,864 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-11 17:33:58,627 INFO (StartupInfoLogger.java:61)- Started RedisTest in 4.183 seconds (JVM running for 5.848)
+2020-09-11 17:35:41,864 INFO (StartupInfoLogger.java:55)- Starting RedisTest on SKY-20200628CJA with PID 17516 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-11 17:35:41,868 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-11 17:35:41,869 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default

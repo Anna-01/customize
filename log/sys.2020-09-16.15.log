@@ -1,0 +1,12 @@
+2020-09-16 23:50:04,905 INFO (StartupInfoLogger.java:61)- Started ConsumerAndProducerTest in 6.979 seconds (JVM running for 9.649)
+2020-09-16 23:50:05,381 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:50:05,382 INFO (ProduceService.java:43)- 生产者生产第1个商品
+2020-09-16 23:50:05,383 INFO (ProduceService.java:43)- 生产者生产第2个商品
+2020-09-16 23:50:05,383 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:50:05,384 INFO (ConsumerService.java:42)- 消费者消费商品=1
+2020-09-16 23:50:05,384 INFO (ConsumerService.java:42)- 消费者消费商品=2
+2020-09-16 23:50:05,384 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:50:05,389 INFO (ProduceService.java:43)- 生产者生产第3个商品
+2020-09-16 23:50:05,390 INFO (ProduceService.java:43)- 生产者生产第4个商品
+2020-09-16 23:50:05,390 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:50:05,390 INFO (ConsumerService.java:42)- 消费者消费商品=3

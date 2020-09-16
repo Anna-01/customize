@@ -1,0 +1,146 @@
+2020-09-07 14:24:57,236 INFO (SafeMap.java:54)- Thread-15getKeyWait
+2020-09-07 14:24:57,242 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-15, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,242 INFO (SafeMap.java:25)- Thread-86setKeyWait
+2020-09-07 14:24:57,243 INFO (SafeMap.java:34)- Thread-12setKeyNotify
+2020-09-07 14:24:57,244 INFO (SafeMap.java:50)- map的size=1
+2020-09-07 14:24:57,244 INFO (SafeMap.java:54)- Thread-12getKeyWait
+2020-09-07 14:24:57,244 INFO (SafeMap.java:25)- Thread-76setKeyWait
+2020-09-07 14:24:57,244 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-12, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,244 INFO (SafeMap.java:34)- Thread-65setKeyNotify
+2020-09-07 14:24:57,245 INFO (SafeMap.java:50)- map的size=1
+2020-09-07 14:24:57,245 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-75, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,246 INFO (SafeMap.java:54)- Thread-65getKeyWait
+2020-09-07 14:24:57,246 INFO (SafeMap.java:25)- Thread-44setKeyWait
+2020-09-07 14:24:57,246 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-65, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,246 INFO (SafeMap.java:34)- Thread-91setKeyNotify
+2020-09-07 14:24:57,246 INFO (SafeMap.java:50)- map的size=1
+2020-09-07 14:24:57,246 INFO (SafeMap.java:54)- Thread-91getKeyWait
+2020-09-07 14:24:57,246 INFO (SafeMap.java:25)- Thread-81setKeyWait
+2020-09-07 14:24:57,246 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-91, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,247 INFO (SafeMap.java:34)- Thread-69setKeyNotify
+2020-09-07 14:24:57,247 INFO (SafeMap.java:34)- Thread-100setKeyNotify
+2020-09-07 14:24:57,247 INFO (SafeMap.java:50)- map的size=1
+2020-09-07 14:24:57,247 INFO (SafeMap.java:54)- Thread-100getKeyWait
+2020-09-07 14:24:57,247 INFO (SafeMap.java:25)- Thread-97setKeyWait
+2020-09-07 14:24:57,247 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-100, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,248 INFO (SafeMap.java:34)- Thread-5setKeyNotify
+2020-09-07 14:24:57,248 INFO (SafeMap.java:50)- map的size=1
+2020-09-07 14:24:57,248 INFO (SafeMap.java:54)- Thread-5getKeyWait
+2020-09-07 14:24:57,248 INFO (SafeMap.java:25)- Thread-83setKeyWait
+2020-09-07 14:24:57,249 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-5, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,249 INFO (SafeMap.java:34)- Thread-13setKeyNotify
+2020-09-07 14:24:57,249 INFO (SafeMap.java:50)- map的size=1
+2020-09-07 14:24:57,249 INFO (SafeMap.java:54)- Thread-13getKeyWait
+2020-09-07 14:24:57,249 INFO (SafeMap.java:25)- Thread-34setKeyWait
+2020-09-07 14:24:57,249 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-13, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,249 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-23, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,249 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-43, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,249 INFO (SafeMap.java:34)- Thread-57setKeyNotify
+2020-09-07 14:24:57,250 INFO (SafeMap.java:34)- Thread-40setKeyNotify
+2020-09-07 14:24:57,250 INFO (SafeMap.java:50)- map的size=1
+2020-09-07 14:24:57,250 INFO (SafeMap.java:54)- Thread-40getKeyWait
+2020-09-07 14:24:57,250 INFO (SafeMap.java:25)- Thread-63setKeyWait
+2020-09-07 14:24:57,250 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-40, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,251 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-77, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,251 INFO (SafeMap.java:34)- Thread-53setKeyNotify
+2020-09-07 14:24:57,251 INFO (SafeMap.java:34)- Thread-88setKeyNotify
+2020-09-07 14:24:57,251 INFO (SafeMap.java:50)- map的size=1
+2020-09-07 14:24:57,251 INFO (SafeMap.java:54)- Thread-88getKeyWait
+2020-09-07 14:24:57,251 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-25, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,251 INFO (SafeMap.java:25)- Thread-22setKeyWait
+2020-09-07 14:24:57,252 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-88, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,252 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-7, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,252 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-49, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,252 INFO (SafeMap.java:34)- Thread-17setKeyNotify
+2020-09-07 14:24:57,252 INFO (SafeMap.java:50)- map的size=1
+2020-09-07 14:24:57,252 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-3, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,252 INFO (SafeMap.java:54)- Thread-17getKeyWait
+2020-09-07 14:24:57,252 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-10, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,253 INFO (SafeMap.java:25)- Thread-4setKeyWait
+2020-09-07 14:24:57,252 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-17, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,253 INFO (SafeMap.java:34)- Thread-66setKeyNotify
+2020-09-07 14:24:57,253 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-27, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,253 INFO (SafeMap.java:34)- Thread-24setKeyNotify
+2020-09-07 14:24:57,253 INFO (SafeMap.java:50)- map的size=1
+2020-09-07 14:24:57,253 INFO (SafeMap.java:54)- Thread-24getKeyWait
+2020-09-07 14:24:57,254 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,254 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-24, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,254 INFO (SafeMap.java:63)- Thread-80getKeyNotify
+2020-09-07 14:24:57,254 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,254 INFO (SafeMap.java:63)- Thread-36getKeyNotify
+2020-09-07 14:24:57,254 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,255 INFO (SafeMap.java:63)- Thread-26getKeyNotify
+2020-09-07 14:24:57,255 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,255 INFO (SafeMap.java:63)- Thread-79getKeyNotify
+2020-09-07 14:24:57,255 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,256 INFO (SafeMap.java:63)- Thread-66getKeyNotify
+2020-09-07 14:24:57,256 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,256 INFO (SafeMap.java:63)- Thread-4getKeyNotify
+2020-09-07 14:24:57,256 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,256 INFO (SafeMap.java:63)- Thread-53getKeyNotify
+2020-09-07 14:24:57,256 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,256 INFO (SafeMap.java:63)- Thread-57getKeyNotify
+2020-09-07 14:24:57,257 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,257 INFO (SafeMap.java:63)- Thread-34getKeyNotify
+2020-09-07 14:24:57,257 INFO (SafeMap.java:25)- Thread-96setKeyWait
+2020-09-07 14:24:57,257 INFO (SafeMap.java:50)- map的size=1
+2020-09-07 14:24:57,257 INFO (SafeMap.java:54)- Thread-69getKeyWait
+2020-09-07 14:24:57,257 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,257 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-69, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,257 INFO (SafeMap.java:63)- Thread-81getKeyNotify
+2020-09-07 14:24:57,258 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,258 INFO (SafeMap.java:63)- Thread-76getKeyNotify
+2020-09-07 14:24:57,258 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,258 INFO (SafeMap.java:63)- Thread-67getKeyNotify
+2020-09-07 14:24:57,258 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,258 INFO (SafeMap.java:63)- Thread-16getKeyNotify
+2020-09-07 14:24:57,259 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,259 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-14, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,259 INFO (SafeMap.java:63)- Thread-20getKeyNotify
+2020-09-07 14:24:57,259 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-19, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,259 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-68, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,259 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-37, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,259 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-93, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,259 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-56, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,259 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-64, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,260 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-41, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,260 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-85, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,260 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-70, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,260 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,260 INFO (SafeMap.java:63)- Thread-8getKeyNotify
+2020-09-07 14:24:57,261 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,261 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-87, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,261 INFO (SafeMap.java:63)- Thread-38getKeyNotify
+2020-09-07 14:24:57,261 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-94, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,261 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-99, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,261 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-2, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,261 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-11, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,261 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-30, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,261 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-28, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,261 INFO (SafeMap.java:25)- Thread-92setKeyWait
+2020-09-07 14:24:57,262 INFO (SafeMap.java:50)- map的size=1
+2020-09-07 14:24:57,262 INFO (SafeMap.java:54)- Thread-55getKeyWait
+2020-09-07 14:24:57,262 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,262 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-55, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,262 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-36, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,262 INFO (SafeMap.java:63)- Thread-21getKeyNotify
+2020-09-07 14:24:57,262 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,262 INFO (SafeMap.java:63)- Thread-89getKeyNotify
+2020-09-07 14:24:57,263 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,263 INFO (SafeMap.java:63)- Thread-86getKeyNotify
+2020-09-07 14:24:57,263 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,263 INFO (SafeMap.java:63)- Thread-44getKeyNotify
+2020-09-07 14:24:57,263 INFO (SafeMap.java:25)- Thread-80setKeyWait
+2020-09-07 14:24:57,263 INFO (SafeMap.java:50)- map的size=1
+2020-09-07 14:24:57,263 INFO (SafeMap.java:54)- Thread-97getKeyWait
+2020-09-07 14:24:57,264 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,264 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-97, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 14:24:57,264 INFO (SafeMap.java:63)- Thread-83getKeyNotify
+2020-09-07 14:24:57,264 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,264 INFO (SafeMap.java:63)- Thread-63getKeyNotify
+2020-09-07 14:24:57,264 INFO (SafeMap.java:50)- map的size=0
+2020-09-07 14:24:57,264 INFO (SafeMap.java:63)- Thread-22getKeyNotify
+2020-09-07 14:24:57,265 INFO (SafeMap.java:25)- Thread-26setKeyWait
+2020-09-07 14:26:04,221 INFO (StartupInfoLogger.java:55)- Starting CountDownTest on SKY-20200628CJA with PID 25800 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 14:26:04,223 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 14:26:04,224 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default

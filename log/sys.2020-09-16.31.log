@@ -1,0 +1,12 @@
+2020-09-16 23:53:46,209 INFO (StartupInfoLogger.java:61)- Started ConsumerAndProducerTest in 6.805 seconds (JVM running for 9.367)
+2020-09-16 23:53:46,731 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:53:46,733 INFO (ProduceService.java:43)- 生产者生产第1个商品maxSize是2
+2020-09-16 23:53:46,733 INFO (ProduceService.java:43)- 生产者生产第2个商品maxSize是2
+2020-09-16 23:53:46,734 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:53:46,734 INFO (ConsumerService.java:42)- 消费者消费商品=1
+2020-09-16 23:53:46,735 INFO (ConsumerService.java:42)- 消费者消费商品=2
+2020-09-16 23:53:46,736 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:53:46,740 INFO (ProduceService.java:43)- 生产者生产第3个商品maxSize是2
+2020-09-16 23:53:46,741 INFO (ProduceService.java:43)- 生产者生产第4个商品maxSize是2
+2020-09-16 23:53:46,741 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:53:46,741 INFO (ConsumerService.java:42)- 消费者消费商品=3

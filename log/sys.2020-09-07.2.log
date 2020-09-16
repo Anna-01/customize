@@ -1,0 +1,13 @@
+2020-09-07 11:05:58,677 INFO (StartupInfoLogger.java:61)- Started CustomizeApplicationTests in 4.231 seconds (JVM running for 5.781)
+2020-09-07 11:05:59,039 INFO (SafeMap.java:25)- mainnotify
+2020-09-07 11:05:59,040 INFO (SafeMap.java:48)- mainnotify
+2020-09-07 11:05:59,041 INFO (SafeMap.java:25)- mainnotify
+2020-09-07 11:05:59,041 INFO (SafeMap.java:48)- mainnotify
+2020-09-07 11:05:59,079 INFO (JsonToJsonAop.java:60)- json转换结果result={"high":0,"fix":false,"name":"lijiaxing","age":"11"}
+2020-09-07 11:07:08,136 INFO (StartupInfoLogger.java:55)- Starting CustomizeApplicationTests on SKY-20200628CJA with PID 11608 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 11:07:08,137 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 11:07:08,143 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-07 11:07:11,849 INFO (StartupInfoLogger.java:61)- Started CustomizeApplicationTests in 4.127 seconds (JVM running for 5.586)
+2020-09-07 11:08:20,453 INFO (StartupInfoLogger.java:55)- Starting CustomizeApplicationTests on SKY-20200628CJA with PID 10332 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-07 11:08:20,456 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-07 11:08:20,458 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default

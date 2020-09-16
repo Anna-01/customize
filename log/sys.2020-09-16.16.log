@@ -1,0 +1,16 @@
+2020-09-16 23:50:05,390 INFO (ConsumerService.java:42)- 消费者消费商品=4
+2020-09-16 23:50:05,396 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:50:05,397 INFO (ProduceService.java:43)- 生产者生产第5个商品
+2020-09-16 23:50:05,397 INFO (ProduceService.java:43)- 生产者生产第6个商品
+2020-09-16 23:50:05,398 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:50:05,398 INFO (ConsumerService.java:42)- 消费者消费商品=5
+2020-09-16 23:50:05,398 INFO (ConsumerService.java:42)- 消费者消费商品=6
+2020-09-16 23:50:05,399 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:50:05,399 INFO (ProduceService.java:43)- 生产者生产第7个商品
+2020-09-16 23:50:05,400 INFO (ProduceService.java:43)- 生产者生产第8个商品
+2020-09-16 23:50:05,400 INFO (ProduceService.java:35)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-16 23:50:05,400 INFO (ConsumerService.java:42)- 消费者消费商品=7
+2020-09-16 23:50:05,400 INFO (ConsumerService.java:42)- 消费者消费商品=8
+2020-09-16 23:50:05,401 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-16 23:50:05,401 INFO (ProduceService.java:43)- 生产者生产第9个商品
+2020-09-16 23:50:05,401 INFO (ProduceService.java:43)- 生产者生产第10个商品
