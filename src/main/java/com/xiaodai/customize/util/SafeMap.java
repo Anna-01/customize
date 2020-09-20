@@ -1,4 +1,4 @@
-package com.xiaodai.customize.aop;
+package com.xiaodai.customize.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,7 +21,7 @@ public class SafeMap {
      */
     public static void setKey(String mName)  {
         synchronized (safeMap) {
-            if (safeMap.size() == 0) {
+             if(safeMap.size() == 0) {
                 try {
                     logger.info(Thread.currentThread().getName() + mName + "setKeyWait");
                     safeMap.put(mName, opator);

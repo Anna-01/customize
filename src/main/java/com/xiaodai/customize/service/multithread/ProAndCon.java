@@ -1,9 +1,12 @@
-package com.xiaodai.customize.service.multithread.consumer;
+package com.xiaodai.customize.service.multithread;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * @author My
+ */
 public class ProAndCon {
     static class Consumer implements Runnable {
 
@@ -16,7 +19,6 @@ public class ProAndCon {
         @Override
         public void run() {
             try {
-                while (true) {
                     synchronized (queue) {
                         while (queue.isEmpty()) {
                             System.out.println("Queue is Empty");
@@ -27,7 +29,7 @@ public class ProAndCon {
                         System.out.println(Thread.currentThread().getName() + " 消费了:" + i + "还剩:" + queue.size());
                         Thread.sleep(100);
                     }
-                }
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -46,7 +48,7 @@ public class ProAndCon {
         @Override
         public void run() {
             try {
-                while (true) {
+
                     synchronized (queue) {
                         while (queue.size() >= length) {
                             queue.wait();
@@ -56,7 +58,7 @@ public class ProAndCon {
                         Thread.sleep(100);
                         queue.notifyAll();
                     }
-                }
+
             } catch (Exception e) {
                 e.printStackTrace();
             }

@@ -1,0 +1,8 @@
+2020-09-19 15:11:02,157 INFO (StartupInfoLogger.java:61)- Started StringTest in 4.119 seconds (JVM running for 5.782)
+2020-09-19 15:11:57,776 INFO (StartupInfoLogger.java:55)- Starting StringTest on SKY-20200628CJA with PID 8424 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-19 15:11:57,777 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-19 15:11:57,778 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-19 15:12:01,757 INFO (StartupInfoLogger.java:61)- Started StringTest in 4.397 seconds (JVM running for 6.19)
+2020-09-19 15:14:01,432 INFO (StartupInfoLogger.java:55)- Starting StringTest on SKY-20200628CJA with PID 15840 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-19 15:14:01,455 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-19 15:14:01,463 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default

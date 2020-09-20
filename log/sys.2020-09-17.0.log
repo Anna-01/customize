@@ -1,0 +1,12 @@
+2020-09-17 16:05:53,923 INFO (StartupInfoLogger.java:55)- Starting SqlTest on SKY-20200628CJA with PID 7440 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-17 16:05:53,940 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-17 16:05:53,948 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-17 16:05:58,982 INFO (StartupInfoLogger.java:61)- Started SqlTest in 5.641 seconds (JVM running for 7.651)
+2020-09-17 16:05:59,459 INFO (SqlTest.java:63)- error结果0
+2020-09-17 16:06:08,292 INFO (StartupInfoLogger.java:55)- Starting SqlTest on SKY-20200628CJA with PID 3252 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-17 16:06:08,297 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-17 16:06:08,304 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-17 16:06:12,990 INFO (StartupInfoLogger.java:61)- Started SqlTest in 5.292 seconds (JVM running for 7.717)
+2020-09-17 16:10:06,350 INFO (StartupInfoLogger.java:55)- Starting SqlTest on SKY-20200628CJA with PID 11684 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-17 16:10:06,351 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-17 16:10:06,352 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default

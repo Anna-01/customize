@@ -3,8 +3,8 @@ package com.xiaodai.customize.aop;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.xiaodai.customize.annotation.JsonAnnotation;
+import com.xiaodai.customize.util.SafeMap;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -41,6 +41,8 @@ public class JsonToJsonAop {
 
     public static HashMap resultMap = new HashMap();
 
+    public static ThreadLocal threadLocal = new ThreadLocal();
+
     @Resource
     private StringRedisTemplate stringRedisTemplate;
 
@@ -64,15 +66,17 @@ public class JsonToJsonAop {
         Class willCla = around.toBean();
         //获取方法的参数
         Object  objects = joinPoint.getArgs()[0];
-        //转换为jsonObjct类型
+        //转换为jsonObject类型
         JSONObject jsonObject = JSON.parseObject((String) objects);
         //处理转换
         Object result =  jsonToObject(willCla, jsonObject);
         //放入缓存中 或者放入容器启动后执行
         logger.info("当前线程={}, json转换结果result={}", Thread.currentThread().getName(), JSONObject.toJSON(result));
         //todo 获取解析结果
-        resultMap.put(objects, result);
+        //resultMap.put(objects, result);
         //todo 方式2 使用redis缓存
+        //使用threadLocal
+        threadLocal.set(result);
 
     }
 
@@ -101,9 +105,9 @@ public class JsonToJsonAop {
         for (String key : source.keySet()) {
             if (methodMap.containsKey(key)) {
                 //对目标对象赋值
-                SafeMap.setKey(key);
+                //SafeMap.setKey(key);
                 setProperty(result, methodMap.get(key), source.get(key));
-                SafeMap.getKey(key);
+                //SafeMap.getKey(key);
             }
         }
         return result;

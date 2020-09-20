@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
+import java.util.Objects;
 
 @SpringBootTest
 public class SqlTest {
@@ -62,5 +63,28 @@ public class SqlTest {
         } else {
             logger.info("error结果"  + error);
         }
+    }
+
+
+    @Test
+     void testNo() {
+        JSONObject jsonObject = new JSONObject(2);
+        String brandName = null;
+        jsonObject.put(brandName, null);
+        String result = jsonObject.toJSONString();
+        System.out.println("json结果" + result);
+        JSONObject dataJson = JSONObject.parseObject(result);
+
+        if(dataJson == null || dataJson.isEmpty()){
+           System.out.println("为空");
+        }
+        dataJson.put("1", 3);
+        System.out.println("json结果" + dataJson.toJSONString());
+
+        String a =null;
+        //System.out.println("a的值" + a.toString());
+        System.out.println("==========");
+        Object object = dataJson.get(null);
+        System.out.println(object);
     }
 }

@@ -1,4 +1,4 @@
-package com.xiaodai.customize.aop;
+package com.xiaodai.customize.util;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonSerializer;

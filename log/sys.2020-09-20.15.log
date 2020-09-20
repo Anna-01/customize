@@ -1,0 +1,29 @@
+2020-09-20 18:02:46,474 INFO (ProduceService.java:39)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-20 18:02:46,477 INFO (ConsumerService.java:43)- 消费者消费一个商品，还剩4个
+2020-09-20 18:02:46,477 INFO (ConsumerService.java:43)- 消费者消费一个商品，还剩5个
+2020-09-20 18:02:46,477 INFO (ConsumerService.java:35)- 等待生产者生产商品
+2020-09-20 18:02:46,478 INFO (ProduceService.java:48)- 生产者生产第47个商品商品还有1
+2020-09-20 18:02:46,478 INFO (ProduceService.java:48)- 生产者生产第48个商品商品还有2
+2020-09-20 18:02:46,478 INFO (ProduceService.java:39)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-20 18:02:46,478 INFO (ConsumerService.java:43)- 消费者消费一个商品，还剩6个
+2020-09-20 18:02:46,478 INFO (ConsumerService.java:43)- 消费者消费一个商品，还剩7个
+2020-09-20 18:02:46,478 INFO (ConsumerService.java:35)- 等待生产者生产商品
+2020-09-20 18:02:46,479 INFO (ProduceService.java:48)- 生产者生产第49个商品商品还有1
+2020-09-20 18:02:46,479 INFO (ProduceService.java:48)- 生产者生产第50个商品商品还有2
+2020-09-20 18:02:46,479 INFO (ConsumerService.java:43)- 消费者消费一个商品，还剩8个
+2020-09-20 18:02:46,479 INFO (ConsumerService.java:43)- 消费者消费一个商品，还剩9个
+2020-09-20 18:03:57,498 INFO (ConsumerService.java:35)- 等待生产者生产商品
+2020-09-20 18:03:57,501 INFO (ProduceService.java:48)- 生产者生产第1个商品商品还有1
+2020-09-20 18:03:57,501 INFO (ProduceService.java:48)- 生产者生产第2个商品商品还有2
+2020-09-20 18:03:57,501 INFO (ProduceService.java:39)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-20 18:03:57,501 INFO (ConsumerService.java:43)- 消费者消费一个商品，还剩0个
+2020-09-20 18:03:57,503 INFO (ConsumerService.java:43)- 消费者消费一个商品，还剩1个
+2020-09-20 18:03:57,503 INFO (ConsumerService.java:35)- 等待生产者生产商品
+2020-09-20 18:03:57,503 INFO (ProduceService.java:48)- 生产者生产第3个商品商品还有1
+2020-09-20 18:03:57,503 INFO (ProduceService.java:48)- 生产者生产第4个商品商品还有2
+2020-09-20 18:03:57,503 INFO (ProduceService.java:39)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-20 18:03:57,504 INFO (ConsumerService.java:43)- 消费者消费一个商品，还剩0个
+2020-09-20 18:03:57,504 INFO (ConsumerService.java:43)- 消费者消费一个商品，还剩1个
+2020-09-20 18:03:57,504 INFO (ConsumerService.java:35)- 等待生产者生产商品
+2020-09-20 18:03:57,504 INFO (ProduceService.java:48)- 生产者生产第5个商品商品还有1
+2020-09-20 18:03:57,504 INFO (ProduceService.java:48)- 生产者生产第6个商品商品还有2

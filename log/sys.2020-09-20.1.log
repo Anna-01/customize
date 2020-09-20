@@ -1,0 +1,76 @@
+2020-09-20 17:09:41,303 INFO (StartupInfoLogger.java:61)- Started CustomizeApplicationTests in 4.451 seconds (JVM running for 5.886)
+2020-09-20 17:09:41,652 INFO (CustomizeApplicationTests.java:38)- 多线程解析json开始
+2020-09-20 17:09:41,829 INFO (JsonToJsonAop.java:74)- 当前线程=main, json转换结果result={"high":0,"creatTime":1600592976000,"fix":false,"name":"lijiaxing","id":0,"age":"11"}
+2020-09-20 17:09:41,847 INFO (JsonToBeanService.java:24)- 获取转换结果=Men(name=lijiaxing, age=11, high=0, fix=false, creatTime=1600592976000, id=0)
+2020-09-20 17:19:51,069 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-20 17:19:51,071 INFO (ProduceService.java:46)- 生产者生产第1个商品maxSize是2
+2020-09-20 17:19:51,072 INFO (ConsumerService.java:42)- 消费者消费商品=1
+2020-09-20 17:20:13,246 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-20 17:20:13,248 INFO (ProduceService.java:46)- 生产者生产第1个商品maxSize是10
+2020-09-20 17:20:13,248 INFO (ConsumerService.java:42)- 消费者消费商品=1
+2020-09-20 17:29:47,570 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-20 17:29:47,573 INFO (ProduceService.java:46)- 生产者生产第1个商品maxSize是10
+2020-09-20 17:29:47,573 INFO (ProduceService.java:46)- 生产者生产第2个商品maxSize是10
+2020-09-20 17:29:47,573 INFO (ProduceService.java:46)- 生产者生产第3个商品maxSize是10
+2020-09-20 17:29:47,574 INFO (ConsumerService.java:42)- 消费者消费商品=1
+2020-09-20 17:31:04,386 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-20 17:31:04,389 INFO (ProduceService.java:46)- 生产者生产第1个商品maxSize是10
+2020-09-20 17:31:04,389 INFO (ProduceService.java:46)- 生产者生产第2个商品maxSize是10
+2020-09-20 17:31:04,389 INFO (ProduceService.java:46)- 生产者生产第3个商品maxSize是10
+2020-09-20 17:31:04,389 INFO (ConsumerService.java:42)- 消费者消费商品=1号
+2020-09-20 17:32:39,029 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-20 17:32:39,036 INFO (ProduceService.java:46)- 生产者生产第1个商品maxSize是2
+2020-09-20 17:32:39,036 INFO (ProduceService.java:46)- 生产者生产第2个商品maxSize是2
+2020-09-20 17:32:39,036 INFO (ProduceService.java:38)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-20 17:32:39,037 INFO (ConsumerService.java:42)- 消费者消费商品=1号
+2020-09-20 17:32:39,038 INFO (ProduceService.java:46)- 生产者生产第3个商品maxSize是2
+2020-09-20 17:35:09,645 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-20 17:35:09,648 INFO (ProduceService.java:46)- 生产者生产第1个商品maxSize是2
+2020-09-20 17:35:09,648 INFO (ProduceService.java:46)- 生产者生产第2个商品maxSize是2
+2020-09-20 17:35:09,648 INFO (ProduceService.java:38)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-20 17:35:09,648 INFO (ConsumerService.java:42)- 消费者消费第1商品，还剩0个
+2020-09-20 17:35:09,650 INFO (ProduceService.java:46)- 生产者生产第3个商品maxSize是2
+2020-09-20 17:43:01,941 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-20 17:43:01,944 INFO (ProduceService.java:46)- 生产者生产第1个商品maxSize是2
+2020-09-20 17:43:01,944 INFO (ProduceService.java:46)- 生产者生产第2个商品maxSize是2
+2020-09-20 17:43:01,944 INFO (ProduceService.java:38)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-20 17:43:01,945 INFO (ConsumerService.java:42)- 消费者消费第1商品，还剩0个
+2020-09-20 17:43:01,946 INFO (ProduceService.java:46)- 生产者生产第3个商品maxSize是2
+2020-09-20 17:44:37,335 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-20 17:44:37,337 INFO (ProduceService.java:47)- 生产者生产第1个商品商品还有1
+2020-09-20 17:44:37,337 INFO (ProduceService.java:47)- 生产者生产第2个商品商品还有2
+2020-09-20 17:44:37,337 INFO (ProduceService.java:38)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-20 17:44:37,338 INFO (ConsumerService.java:42)- 消费者消费第1商品，还剩0个
+2020-09-20 17:44:37,339 INFO (ProduceService.java:47)- 生产者生产第3个商品商品还有2
+2020-09-20 17:46:43,270 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-20 17:46:43,272 INFO (ProduceService.java:47)- 生产者生产第1个商品商品还有1
+2020-09-20 17:46:43,272 INFO (ProduceService.java:47)- 生产者生产第2个商品商品还有2
+2020-09-20 17:46:43,273 INFO (ProduceService.java:38)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-20 17:46:43,273 INFO (ConsumerService.java:42)- 消费者消费第1商品，还剩1个
+2020-09-20 17:46:43,274 INFO (ProduceService.java:47)- 生产者生产第3个商品商品还有2
+2020-09-20 17:51:22,376 INFO (ConsumerService.java:34)- 等待生产者生产商品
+2020-09-20 17:51:22,378 INFO (ProduceService.java:48)- 生产者生产第1个商品商品还有1
+2020-09-20 17:51:22,378 INFO (ConsumerService.java:42)- 消费者消费第1商品，还剩0个
+2020-09-20 17:51:22,380 INFO (ProduceService.java:48)- 生产者生产第2个商品商品还有1
+2020-09-20 17:51:22,380 INFO (ConsumerService.java:42)- 消费者消费第2商品，还剩0个
+2020-09-20 17:51:22,380 INFO (ProduceService.java:48)- 生产者生产第3个商品商品还有1
+2020-09-20 17:51:22,380 INFO (ConsumerService.java:42)- 消费者消费第3商品，还剩0个
+2020-09-20 17:51:22,381 INFO (ProduceService.java:48)- 生产者生产第4个商品商品还有1
+2020-09-20 17:51:22,381 INFO (ConsumerService.java:42)- 消费者消费第4商品，还剩0个
+2020-09-20 17:51:22,381 INFO (ProduceService.java:48)- 生产者生产第5个商品商品还有1
+2020-09-20 17:51:22,381 INFO (ConsumerService.java:42)- 消费者消费第5商品，还剩0个
+2020-09-20 17:54:40,646 INFO (ConsumerService.java:35)- 等待生产者生产商品
+2020-09-20 17:54:40,649 INFO (ProduceService.java:48)- 生产者生产第1个商品商品还有1
+2020-09-20 17:54:40,649 INFO (ProduceService.java:48)- 生产者生产第3个商品商品还有2
+2020-09-20 17:54:40,649 INFO (ProduceService.java:39)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-20 17:54:40,649 INFO (ConsumerService.java:43)- 消费者消费第1商品，还剩1个
+2020-09-20 17:54:40,652 INFO (ConsumerService.java:43)- 消费者消费第3商品，还剩0个
+2020-09-20 17:54:40,652 INFO (ConsumerService.java:35)- 等待生产者生产商品
+2020-09-20 17:54:40,652 INFO (ProduceService.java:48)- 生产者生产第1个商品商品还有1
+2020-09-20 17:54:40,652 INFO (ProduceService.java:48)- 生产者生产第3个商品商品还有2
+2020-09-20 17:54:40,652 INFO (ProduceService.java:39)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-20 17:54:40,653 INFO (ConsumerService.java:43)- 消费者消费第1商品，还剩1个
+2020-09-20 17:54:40,653 INFO (ConsumerService.java:43)- 消费者消费第3商品，还剩0个
+2020-09-20 17:54:40,653 INFO (ConsumerService.java:35)- 等待生产者生产商品
+2020-09-20 17:54:40,653 INFO (ProduceService.java:48)- 生产者生产第1个商品商品还有1
+2020-09-20 17:54:40,653 INFO (ProduceService.java:48)- 生产者生产第3个商品商品还有2

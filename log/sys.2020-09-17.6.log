@@ -1,0 +1,5 @@
+2020-09-17 20:07:46,033 INFO (StartupInfoLogger.java:61)- Started SqlTest in 5.981 seconds (JVM running for 7.932)
+2020-09-17 20:08:28,444 INFO (StartupInfoLogger.java:55)- Starting SqlTest on SKY-20200628CJA with PID 13932 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-17 20:08:28,446 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-17 20:08:28,447 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-17 20:08:33,053 INFO (StartupInfoLogger.java:61)- Started SqlTest in 5.043 seconds (JVM running for 6.946)

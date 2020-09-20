@@ -1,0 +1,32 @@
+2020-09-20 18:02:46,446 INFO (ProduceService.java:48)- 生产者生产第11个商品商品还有1
+2020-09-20 18:02:46,448 INFO (ProduceService.java:48)- 生产者生产第12个商品商品还有2
+2020-09-20 18:02:46,449 INFO (ProduceService.java:39)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-20 18:02:46,449 INFO (ConsumerService.java:43)- 消费者消费一个商品，还剩2个
+2020-09-20 18:02:46,449 INFO (ConsumerService.java:43)- 消费者消费一个商品，还剩3个
+2020-09-20 18:02:46,449 INFO (ConsumerService.java:35)- 等待生产者生产商品
+2020-09-20 18:02:46,450 INFO (ProduceService.java:48)- 生产者生产第13个商品商品还有1
+2020-09-20 18:02:46,450 INFO (ProduceService.java:48)- 生产者生产第14个商品商品还有2
+2020-09-20 18:02:46,450 INFO (ProduceService.java:39)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-20 18:02:46,450 INFO (ConsumerService.java:43)- 消费者消费一个商品，还剩2个
+2020-09-20 18:02:46,450 INFO (ConsumerService.java:43)- 消费者消费一个商品，还剩3个
+2020-09-20 18:02:46,450 INFO (ConsumerService.java:35)- 等待生产者生产商品
+2020-09-20 18:02:46,451 INFO (ProduceService.java:48)- 生产者生产第15个商品商品还有1
+2020-09-20 18:02:46,451 INFO (ProduceService.java:48)- 生产者生产第16个商品商品还有2
+2020-09-20 18:02:46,451 INFO (ProduceService.java:39)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-20 18:02:46,451 INFO (ConsumerService.java:43)- 消费者消费一个商品，还剩2个
+2020-09-20 18:02:46,451 INFO (ConsumerService.java:43)- 消费者消费一个商品，还剩3个
+2020-09-20 18:02:46,451 INFO (ConsumerService.java:35)- 等待生产者生产商品
+2020-09-20 18:02:46,452 INFO (ProduceService.java:48)- 生产者生产第17个商品商品还有1
+2020-09-20 18:02:46,452 INFO (ProduceService.java:48)- 生产者生产第18个商品商品还有2
+2020-09-20 18:02:46,452 INFO (ProduceService.java:39)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-20 18:02:46,452 INFO (ConsumerService.java:43)- 消费者消费一个商品，还剩2个
+2020-09-20 18:02:46,452 INFO (ConsumerService.java:43)- 消费者消费一个商品，还剩3个
+2020-09-20 18:02:46,452 INFO (ConsumerService.java:35)- 等待生产者生产商品
+2020-09-20 18:02:46,452 INFO (ProduceService.java:48)- 生产者生产第19个商品商品还有1
+2020-09-20 18:02:46,453 INFO (ProduceService.java:48)- 生产者生产第20个商品商品还有2
+2020-09-20 18:02:46,453 INFO (ProduceService.java:39)- 生产者生产已满等待消费者 进行消费并唤醒
+2020-09-20 18:02:46,453 INFO (ConsumerService.java:43)- 消费者消费一个商品，还剩4个
+2020-09-20 18:02:46,453 INFO (ConsumerService.java:43)- 消费者消费一个商品，还剩5个
+2020-09-20 18:02:46,453 INFO (ConsumerService.java:35)- 等待生产者生产商品
+2020-09-20 18:02:46,453 INFO (ProduceService.java:48)- 生产者生产第21个商品商品还有1
+2020-09-20 18:02:46,453 INFO (ProduceService.java:48)- 生产者生产第22个商品商品还有2

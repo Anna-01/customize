@@ -20,7 +20,7 @@ public class JsonToBeanService {
     @JsonAnnotation(toBean = Men.class)
     public void getJson(String sourceJson) {
 
-        JsonToJsonAop.resultMap.get(sourceJson);
-        //logger.info("转换结果={}", men.toString());
+        Object result = JsonToJsonAop.threadLocal.get();
+        logger.info("获取转换结果={}", result.toString());
     }
 }
