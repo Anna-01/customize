@@ -3,7 +3,6 @@ package com.xiaodai.customize.aop;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.xiaodai.customize.annotation.JsonAnnotation;
-import com.xiaodai.customize.util.SafeMap;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -11,10 +10,8 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
-import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -25,11 +22,11 @@ import java.util.HashMap;
 import java.util.Locale;
 
 /**
- *
  * 解析json切面实现类
  * 步骤分解
  * 1.将json字符串转化为实体类 （注解，反射）
  * 2.实现解析功能的线程安全
+ *
  * @author My
  */
 @Component
@@ -39,12 +36,10 @@ public class JsonToJsonAop {
 
     Logger logger = LoggerFactory.getLogger(JsonToJsonAop.class);
 
-    public static HashMap resultMap = new HashMap();
-
     public static ThreadLocal threadLocal = new ThreadLocal();
 
-    @Resource
-    private StringRedisTemplate stringRedisTemplate;
+    public static HashMap<String, Field> methodMap = new HashMap<String, Field>(16);
+
 
     /**
      * 切点
@@ -56,6 +51,7 @@ public class JsonToJsonAop {
 
     /**
      * json转换实体对象
+     *
      * @param joinPoint
      * @param around
      * @throws Throwable
@@ -65,16 +61,15 @@ public class JsonToJsonAop {
         //获取要转换的类型
         Class willCla = around.toBean();
         //获取方法的参数
-        Object  objects = joinPoint.getArgs()[0];
+        Object objects = joinPoint.getArgs()[0];
         //转换为jsonObject类型
         JSONObject jsonObject = JSON.parseObject((String) objects);
         //处理转换
-        Object result =  jsonToObject(willCla, jsonObject);
+        Object result = jsonToObject(willCla, jsonObject);
         //放入缓存中 或者放入容器启动后执行
         logger.info("当前线程={}, json转换结果result={}", Thread.currentThread().getName(), JSONObject.toJSON(result));
-        //todo 获取解析结果
+        //获取解析结果
         //resultMap.put(objects, result);
-        //todo 方式2 使用redis缓存
         //使用threadLocal
         threadLocal.set(result);
 
@@ -82,35 +77,41 @@ public class JsonToJsonAop {
 
     /**
      * 处理转换方法
+     *
      * @param clazz  转换的目标
-     * @param source  被转换的
-     * @param <T> 为占位符  编译的时候告诉他
+     * @param source 被转换的
+     * @param <T>    为占位符  编译的时候告诉他
      * @return
      * @throws IllegalAccessException
      * @throws InstantiationException
      */
-    public   <T> T jsonToObject(Class<T> clazz, JSONObject source) throws IllegalAccessException, InstantiationException {
-        //目标对象实例
-        T result = clazz.newInstance();
-        //目标方法
-        Field[] fields = clazz.getDeclaredFields();
-        //目标方法集合
-        HashMap<String, Field> methodMap = new HashMap<String, Field>(16);
-        for (Field field : fields) {
-            field.setAccessible(true);
-            methodMap.put(field.getName(), field);
-        }
+    public <T> T jsonToObject(Class<T> clazz, JSONObject source) {
+        try {
+            //目标对象实例
+            T result = clazz.newInstance();
+            //目标方法
+            Field[] fields = clazz.getDeclaredFields();
+            //目标方法集合
 
-        //遍历JSONObject 对象
-        for (String key : source.keySet()) {
-            if (methodMap.containsKey(key)) {
-                //对目标对象赋值
-                //SafeMap.setKey(key);
-                setProperty(result, methodMap.get(key), source.get(key));
-                //SafeMap.getKey(key);
+            for (Field field : fields) {
+                field.setAccessible(true);
+                methodMap.put(field.getName(), field);
             }
+
+            //遍历JSONObject 对象
+            for (String key : source.keySet()) {
+                if (methodMap.containsKey(key)) {
+                    //对目标对象赋值
+                    //SafeMap.setKey(key);
+                    setProperty(result, methodMap.get(key), source.get(key));
+                    //SafeMap.getKey(key);
+                }
+            }
+            return result;
+        } catch (Exception e) {
+            logger.error("转换解析json异常", e);
         }
-        return result;
+        return null;
     }
 
     /**
@@ -121,7 +122,7 @@ public class JsonToJsonAop {
      * @param setValue
      * @param <T>
      */
-    private  synchronized <T>  void setProperty(T obj, Field field, Object setValue) {
+    private synchronized <T> void setProperty(T obj, Field field, Object setValue) {
         String setValueString = setValue.toString();
         Class<?> clazz = obj.getClass();
         Method method = null;
@@ -173,13 +174,14 @@ public class JsonToJsonAop {
             long time = date.getTime();
         } catch (ParseException e) {
             e.printStackTrace();
-            return  null;
+            return null;
         }
         return date;
     }
 
     /**
      * 检测boolean
+     *
      * @param setValueString
      * @return
      */
@@ -192,13 +194,13 @@ public class JsonToJsonAop {
 
     /**
      * 判断是否是date
+     *
      * @param setValue
      * @return
      */
     public boolean isDate(String setValue) {
         boolean isDate = false;
-        //Date date = new SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy", Locale.US).parse(setValue);
-        SimpleDateFormat sdf=  new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
         try {
             sdf.format(setValue);
             isDate = true;
@@ -208,8 +210,6 @@ public class JsonToJsonAop {
         }
         return isDate;
     }
-
-
 
 
 }

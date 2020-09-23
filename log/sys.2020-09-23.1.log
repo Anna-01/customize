@@ -1,0 +1,10 @@
+2020-09-23 14:05:26,984 INFO (StartupInfoLogger.java:61)- Started CustomizeCacheTest in 5.383 seconds (JVM running for 7.409)
+2020-09-23 14:05:27,345 INFO (CustomizeCacheService.java:19)- 执行getUserInfoById 方法
+2020-09-23 14:07:59,852 INFO (StartupInfoLogger.java:55)- Starting CustomizeCacheTest on SKY-20200628CJA with PID 19188 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-23 14:07:59,853 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-23 14:07:59,855 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-23 14:08:05,284 INFO (StartupInfoLogger.java:61)- Started CustomizeCacheTest in 5.952 seconds (JVM running for 7.902)
+2020-09-23 14:08:05,768 INFO (CustomizeCacheService.java:19)- 执行getUserInfoById 方法
+2020-09-23 14:08:47,319 INFO (StartupInfoLogger.java:55)- Starting CustomizeCacheTest on SKY-20200628CJA with PID 9824 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-23 14:08:47,321 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-23 14:08:47,322 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default

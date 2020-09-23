@@ -1,4 +1,4 @@
-package com.xiaodai.customize.util;
+package com.xiaodai.customize.safe;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

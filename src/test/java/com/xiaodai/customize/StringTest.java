@@ -32,7 +32,6 @@ public class StringTest {
 
         post = transSpace(p2);
 
-
         // 去除 \
         post = stringGang(post);
 

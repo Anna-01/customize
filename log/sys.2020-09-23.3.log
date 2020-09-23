@@ -1,0 +1,11 @@
+2020-09-23 14:09:49,313 INFO (CustomizeCacheService.java:19)- 执行getUserInfoById 方法
+2020-09-23 14:09:49,318 INFO (CustomizeCacheAop.java:77)- 缓存加入 key=[111],value="返回结果"
+2020-09-23 14:15:29,600 INFO (StartupInfoLogger.java:55)- Starting CustomizeCacheTest on SKY-20200628CJA with PID 20288 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-23 14:15:29,602 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-23 14:15:29,604 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-23 14:15:34,878 INFO (StartupInfoLogger.java:61)- Started CustomizeCacheTest in 5.89 seconds (JVM running for 7.859)
+2020-09-23 14:15:35,292 INFO (CustomizeCacheAop.java:58)- 开始执行缓存注解方法------
+2020-09-23 14:15:37,390 INFO (CustomizeCacheAop.java:66)- 获取缓存结果key=[111], value="返回结果"
+2020-09-23 14:20:23,031 INFO (StartupInfoLogger.java:55)- Starting CustomizeCacheTest on SKY-20200628CJA with PID 14896 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-23 14:20:23,034 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-23 14:20:23,035 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
