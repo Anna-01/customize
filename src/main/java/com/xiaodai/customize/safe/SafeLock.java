@@ -15,7 +15,7 @@ public class SafeLock {
 
     private static Logger logger = LoggerFactory.getLogger(SafeLock.class);
 
-    private static Lock lock = new ReentrantLock();
+    private static final Lock lock = new ReentrantLock();
 
     /**
      * 获取锁

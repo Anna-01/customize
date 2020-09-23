@@ -1,5 +1,6 @@
 package com.xiaodai.customize;
 
+import com.xiaodai.customize.service.cache.CustomizeCacheService;
 import com.xiaodai.customize.service.json.JsonToBeanService;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -94,11 +95,14 @@ public class CountDownTest {
     }
 
     //多线程执行类
-    public class ThreadClass implements Runnable{
+    public static class ThreadClass implements Runnable{
         private JsonToBeanService jsonToBeanService;
 
         public ThreadClass(JsonToBeanService showService) {
             this.jsonToBeanService = showService;
+        }
+
+        public ThreadClass(CustomizeCacheService customizeCacheService) {
         }
 
         @Override

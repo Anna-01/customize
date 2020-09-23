@@ -64,6 +64,8 @@ public class CustomizeCacheAop {
 
             //加锁
             LockInfo lockInfo = SafeLock.reenterLock(3, TimeUnit.MINUTES);
+
+            logger.info(Thread.currentThread().getName() + "线程获取锁执行");
             if (lockInfo.lockFlag == false) {
                 logger.info("该锁已被获取--");
                 return " ";
