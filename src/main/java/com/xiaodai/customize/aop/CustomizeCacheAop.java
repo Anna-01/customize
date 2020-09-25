@@ -90,9 +90,8 @@ public class CustomizeCacheAop {
             }
 
             return result;
-        } catch (Throwable throwable) {
-            logger.error("自定义缓存实现异常");
-            throwable.printStackTrace();
+        } catch (Throwable e) {
+            logger.error("自定义缓存实现异常", e);
         } finally {
             //解锁
             SafeLock.unLock();
@@ -115,7 +114,7 @@ public class CustomizeCacheAop {
         try {
             //<> 情况a
             if (obj instanceof JSONArray) {
-                //a,b  a是否是b的子类   是否是参数化类型 <>符号的变量是参数化类型
+                //a,b  a是否是b的子类   是否是参数化类型 <>符号的变量是参数化类型 类似于List<>
                 if (ParameterizedType.class.isAssignableFrom(type.getClass())) {
                     Type[] varArray = ((ParameterizedType) type).getActualTypeArguments();
                     int length = varArray.length;
@@ -129,6 +128,7 @@ public class CustomizeCacheAop {
                 }
                 return null;
             } else {
+                //装载类
                 return JSON.parseObject(value, Class.forName(type.getTypeName()));
             }
         } catch (Exception e) {
