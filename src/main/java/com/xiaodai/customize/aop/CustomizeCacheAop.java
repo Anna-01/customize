@@ -9,7 +9,6 @@ import com.xiaodai.customize.safe.SafeLock;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -39,21 +38,13 @@ public class CustomizeCacheAop {
     private StringRedisTemplate stringRedisTemplate;
 
     /**
-     * 切点
-     */
-    @Pointcut("@annotation(com.xiaodai.customize.annotation.CustomizeCache)")
-    public void pointCut() {
-
-    }
-
-    /**
      * 实现思路
      * 1.before 判断 缓存中有没有没有就去执行 加入缓存 、、  应该用@around注解
      *
      * @param point
      */
     @Around(value = "@annotation(cache)")
-    public Object cacheMethod(ProceedingJoinPoint point, CustomizeCache cache) {
+    private Object cacheMethod(ProceedingJoinPoint point, CustomizeCache cache) {
         logger.info("开始执行缓存注解方法------");
         Object result = null;
         try {

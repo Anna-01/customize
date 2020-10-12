@@ -3,10 +3,10 @@ package com.xiaodai.customize.aop;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.xiaodai.customize.annotation.JsonAnnotation;
+import com.xiaodai.customize.util.ThreadLocalUtil;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
@@ -32,22 +32,13 @@ import java.util.Locale;
 @Component
 @Aspect
 @EnableAspectJAutoProxy(exposeProxy = true, proxyTargetClass = true)
-public class JsonToJsonAop {
+public class JsonToBeanAop {
 
-    Logger logger = LoggerFactory.getLogger(JsonToJsonAop.class);
+    private Logger logger = LoggerFactory.getLogger(JsonToBeanAop.class);
 
-    public static ThreadLocal threadLocal = new ThreadLocal();
+    public ThreadLocal threadLocal = new ThreadLocal();
 
-    public static HashMap<String, Field> methodMap = new HashMap<String, Field>(16);
-
-
-    /**
-     * 切点
-     */
-    @Pointcut("@annotation(com.xiaodai.customize.annotation.JsonAnnotation)")
-    public void pointCut() {
-
-    }
+    private static HashMap<String, Field> methodMap = new HashMap<String, Field>(16);
 
     /**
      * json转换实体对象
@@ -57,9 +48,10 @@ public class JsonToJsonAop {
      * @throws Throwable
      */
     @Before(value = "@annotation(around)")
-    public void json2Bean(JoinPoint joinPoint, JsonAnnotation around) throws Throwable {
+    private void json2Bean(JoinPoint joinPoint, JsonAnnotation around) throws Throwable {
         //获取要转换的类型
         Class willCla = around.toBean();
+        //JSON.parseObject("字符串", new TypeReference <Object>() {});
         //获取方法的参数
         Object objects = joinPoint.getArgs()[0];
         //转换为jsonObject类型
@@ -72,7 +64,7 @@ public class JsonToJsonAop {
         //resultMap.put(objects, result);
         //使用threadLocal
         threadLocal.set(result);
-
+        ThreadLocalUtil.setThreadLocalValue(result);
     }
 
     /**
@@ -85,7 +77,7 @@ public class JsonToJsonAop {
      * @throws IllegalAccessException
      * @throws InstantiationException
      */
-    public <T> T jsonToObject(Class<T> clazz, JSONObject source) {
+    private  <T> T jsonToObject(Class<T> clazz, JSONObject source) {
         try {
             //目标对象实例
             T result = clazz.newInstance();
@@ -198,7 +190,7 @@ public class JsonToJsonAop {
      * @param setValue
      * @return
      */
-    public boolean isDate(String setValue) {
+    private boolean isDate(String setValue) {
         boolean isDate = false;
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
         try {
