@@ -1,8 +1,0 @@
-2020-09-10 23:26:04,474 INFO (StartupInfoLogger.java:61)- Started CustomizeApplicationTests in 3.578 seconds (JVM running for 5.114)
-2020-09-10 23:28:20,548 INFO (StartupInfoLogger.java:55)- Starting CustomizeApplicationTests on SKY-20200628CJA with PID 29288 (started by My in C:\Users\My\IdeaProjects\customize)
-2020-09-10 23:28:20,550 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-09-10 23:28:20,551 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
-2020-09-10 23:28:23,984 INFO (StartupInfoLogger.java:61)- Started CustomizeApplicationTests in 3.835 seconds (JVM running for 5.226)
-2020-09-10 23:28:39,811 INFO (StartupInfoLogger.java:55)- Starting CustomizeApplicationTests on SKY-20200628CJA with PID 17328 (started by My in C:\Users\My\IdeaProjects\customize)
-2020-09-10 23:28:39,817 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-09-10 23:28:39,818 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default

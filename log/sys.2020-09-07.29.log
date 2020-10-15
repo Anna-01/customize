@@ -1,7 +1,0 @@
-2020-09-07 12:58:21,760 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-7, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
-2020-09-07 12:58:21,760 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-5, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
-2020-09-07 12:58:21,760 INFO (JsonToJsonAop.java:67)- 当前线程=Thread-6, json转换结果result={"high":0,"creatTime":0,"fix":false,"name":"lijiaxing","age":"11"}
-2020-09-07 12:59:44,136 INFO (StartupInfoLogger.java:55)- Starting CustomizeApplication on SKY-20200628CJA with PID 25032 (C:\Users\My\IdeaProjects\customize\target\classes started by My in C:\Users\My\IdeaProjects\customize)
-2020-09-07 12:59:44,140 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-09-07 12:59:44,141 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
-2020-09-07 12:59:46,378 INFO (StartupInfoLogger.java:61)- Started CustomizeApplication in 2.758 seconds (JVM running for 4.329)

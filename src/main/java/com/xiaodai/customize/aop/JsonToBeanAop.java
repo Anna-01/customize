@@ -13,13 +13,14 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * 解析json切面实现类
@@ -27,18 +28,15 @@ import java.util.Locale;
  * 1.将json字符串转化为实体类 （注解，反射）
  * 2.实现解析功能的线程安全
  *
- * @author My
+ * @author ljx
  */
 @Component
 @Aspect
 @EnableAspectJAutoProxy(exposeProxy = true, proxyTargetClass = true)
 public class JsonToBeanAop {
-
     private Logger logger = LoggerFactory.getLogger(JsonToBeanAop.class);
-
-    public ThreadLocal threadLocal = new ThreadLocal();
-
-    private static HashMap<String, Field> methodMap = new HashMap<String, Field>(16);
+    private final Lock lock = new ReentrantLock();
+    //静态全局变量 也会有线程安全问题
 
     /**
      * json转换实体对象
@@ -48,22 +46,19 @@ public class JsonToBeanAop {
      * @throws Throwable
      */
     @Before(value = "@annotation(around)")
-    private void json2Bean(JoinPoint joinPoint, JsonAnnotation around) throws Throwable {
+    private void json2Bean(JoinPoint joinPoint, JsonAnnotation around) {
         //获取要转换的类型
         Class willCla = around.toBean();
-        //JSON.parseObject("字符串", new TypeReference <Object>() {});
         //获取方法的参数
         Object objects = joinPoint.getArgs()[0];
         //转换为jsonObject类型
         JSONObject jsonObject = JSON.parseObject((String) objects);
         //处理转换
+
         Object result = jsonToObject(willCla, jsonObject);
         //放入缓存中 或者放入容器启动后执行
         logger.info("当前线程={}, json转换结果result={}", Thread.currentThread().getName(), JSONObject.toJSON(result));
         //获取解析结果
-        //resultMap.put(objects, result);
-        //使用threadLocal
-        threadLocal.set(result);
         ThreadLocalUtil.setThreadLocalValue(result);
     }
 
@@ -77,7 +72,7 @@ public class JsonToBeanAop {
      * @throws IllegalAccessException
      * @throws InstantiationException
      */
-    private  <T> T jsonToObject(Class<T> clazz, JSONObject source) {
+    private <T> T jsonToObject(Class<T> clazz, JSONObject source) {
         try {
             //目标对象实例
             T result = clazz.newInstance();
@@ -85,23 +80,61 @@ public class JsonToBeanAop {
             Field[] fields = clazz.getDeclaredFields();
             //目标方法集合
 
+            HashMap<String, Field> methodMap = new HashMap<>(fields.length);
             for (Field field : fields) {
                 field.setAccessible(true);
                 methodMap.put(field.getName(), field);
             }
-
             //遍历JSONObject 对象
             for (String key : source.keySet()) {
                 if (methodMap.containsKey(key)) {
                     //对目标对象赋值
                     //SafeMap.setKey(key);
-                    setProperty(result, methodMap.get(key), source.get(key));
+                    setProperty(result, methodMap.remove(key), source.get(key));
                     //SafeMap.getKey(key);
                 }
             }
             return result;
         } catch (Exception e) {
             logger.error("转换解析json异常", e);
+        }
+        return null;
+    }
+
+    /**
+     * 处理转换方法
+     *
+     * @param clazz  转换的目标
+     * @param source 被转换的
+     * @param <T>    为占位符  编译的时候告诉他
+     * @return
+     * @throws IllegalAccessException
+     * @throws InstantiationException
+     */
+    private <T> T jsonToObjectByLock(Class<T> clazz, JSONObject source) {
+        lock.lock();
+        try {
+            //目标对象实例
+            T result = clazz.newInstance();
+            //目标方法
+            Field[] fields = clazz.getDeclaredFields();
+            //目标方法集合
+            HashMap<String, Field> methodMap = new HashMap<>(fields.length);
+            for (Field field : fields) {
+                field.setAccessible(true);
+                methodMap.put(field.getName(), field);
+            }
+            //遍历JSONObject 对象
+            for (String key : source.keySet()) {
+                if (methodMap.containsKey(key)) {
+                    setProperty(result, methodMap.remove(key), source.get(key));
+                }
+            }
+            return result;
+        } catch (Exception e) {
+            logger.error("转换解析json异常", e);
+        } finally {
+            lock.unlock();
         }
         return null;
     }
@@ -150,12 +183,8 @@ public class JsonToBeanAop {
                 method.invoke(obj, setValueString);
             }
             //调用set方法为类的实例赋值
-        } catch (NoSuchMethodException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+            logger.error( "jsonToBean对象赋值属性异常", e);
         }
     }
 

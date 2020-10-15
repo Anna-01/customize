@@ -40,14 +40,14 @@ public class SafeMapByLock {
                 try {
                     logger.info(Thread.currentThread().getName() + mName + "setKeyWait");
                     safeMap.put(mName, opator);
-                    safeMap.wait();
+                    condition.await();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             } else {
                 try {
                     logger.info(Thread.currentThread().getName() + mName + "setKeyNotify");
-                    safeMap.notify();
+                    condition.signalAll();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -77,7 +77,7 @@ public class SafeMapByLock {
                     try {
                         safeMap.remove(mName);
                         logger.info(Thread.currentThread().getName() + mName + "getKeyWait");
-                        safeMap.wait();
+                        condition.await();
 
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -87,7 +87,7 @@ public class SafeMapByLock {
 
                 try {
                     logger.info(Thread.currentThread().getName() + mName + "getKeyNotify");
-                    safeMap.notify();
+                   condition.signalAll();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

@@ -1,0 +1,12 @@
+2020-10-12 10:58:08,076 INFO (StartupInfoLogger.java:55)- Starting AsyncTest on SKY-20200628CJA with PID 11380 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-10-12 10:58:08,084 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-12 10:58:08,085 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-10-12 10:58:11,343 INFO (StartupInfoLogger.java:61)- Started AsyncTest in 3.665 seconds (JVM running for 5.282)
+2020-10-12 11:02:26,773 INFO (StartupInfoLogger.java:55)- Starting AsyncTest on SKY-20200628CJA with PID 15428 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-10-12 11:02:26,774 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-12 11:02:26,775 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-10-12 11:02:31,763 INFO (StartupInfoLogger.java:61)- Started AsyncTest in 5.541 seconds (JVM running for 6.92)
+2020-10-12 11:02:32,146 INFO (CustomizeCacheService.java:51)- 当前线程=task-1
+2020-10-12 11:03:43,863 INFO (StartupInfoLogger.java:55)- Starting AsyncTest on SKY-20200628CJA with PID 14520 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-10-12 11:03:43,864 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-10-12 11:03:43,865 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default

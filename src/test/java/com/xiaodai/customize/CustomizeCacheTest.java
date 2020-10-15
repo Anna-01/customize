@@ -1,5 +1,8 @@
 package com.xiaodai.customize;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import com.xiaodai.customize.annotation.CustomizeCache;
 import com.xiaodai.customize.service.cache.CustomizeCacheService;
 import com.xiaodai.customize.service.json.JsonToBeanService;
@@ -43,7 +46,7 @@ public class CustomizeCacheTest {
      * 模拟并发
      */
     @Test
-    @PostConstruct
+    //@PostConstruct
     public void testConcurrent() {
         for(int i = 0; i< threadNum; i++) {
             //new多个子线程
@@ -79,6 +82,23 @@ public class CustomizeCacheTest {
             }
             //执行业务方法
             customizeCacheService.getUserInfoById(id);
+        }
+    }
+
+
+    @Test
+    void testJsonArray() throws ClassNotFoundException {
+        JSONArray array = new JSONArray();
+
+        try {
+            //生成。class文件
+            Class result = Class.forName("com.xiaodai.customize.service.json.JsonToBeanService");
+            System.out.println("结果：" + result);
+            //转换 string 字符串到 class文件
+
+            JSONObject.parseObject("", result);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
         }
 
     }

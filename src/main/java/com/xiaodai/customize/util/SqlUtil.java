@@ -12,7 +12,8 @@ public class SqlUtil {
     public static void main(String args[]) {
         try {
             //写文件
-            File writename = new File("C:\\Users\\My\\Desktop\\result.txt"); //如果没有则要建立一个新的output.txt文件
+            //如果没有则要建立一个新的output.txt文件
+            File writename = new File("C:\\Users\\My\\Desktop\\result.txt");
             writename.createNewFile(); // 创建新文件
             BufferedWriter out = new BufferedWriter(new FileWriter(writename));
 

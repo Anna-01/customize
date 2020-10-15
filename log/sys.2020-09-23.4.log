@@ -1,0 +1,5 @@
+2020-09-23 14:20:28,197 INFO (StartupInfoLogger.java:61)- Started CustomizeCacheTest in 5.799 seconds (JVM running for 7.839)
+2020-09-23 14:20:28,604 INFO (CustomizeCacheAop.java:58)- 开始执行缓存注解方法------
+2020-09-23 14:20:30,808 INFO (CustomizeCacheAop.java:66)- 获取缓存结果key=[[1,2,3]], value=null
+2020-09-23 14:20:30,819 INFO (CustomizeCacheService.java:27)- 执行getUserInfoById 方法
+2020-09-23 14:20:30,821 INFO (CustomizeCacheAop.java:78)- 缓存加入 key=[[1,2,3]],value="返回list结果"

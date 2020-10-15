@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 /**
- * @author My
+ * @author ljx
  */
 @Service
 public class JsonToBeanService {
