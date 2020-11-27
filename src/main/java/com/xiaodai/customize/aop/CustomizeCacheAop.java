@@ -6,10 +6,10 @@ import com.alibaba.fastjson.JSONObject;
 import com.xiaodai.customize.annotation.CustomizeCache;
 import com.xiaodai.customize.base.LockInfo;
 import com.xiaodai.customize.safe.SafeLock;
+import jdk.nashorn.internal.ir.Block;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,7 +21,8 @@ import javax.annotation.Resource;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.Objects;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * 执行顺序，@Around -  join.processed  -  @before - 方法  -  @After - join.processed后内容 - @AfterReturning-
@@ -35,16 +36,10 @@ public class CustomizeCacheAop {
 
     Logger logger = LoggerFactory.getLogger(CustomizeCacheAop.class);
 
+    private final Lock lock = new ReentrantLock();
+
     @Resource
     private StringRedisTemplate stringRedisTemplate;
-
-    /**
-     * 切点
-     */
-    @Pointcut("@annotation(com.xiaodai.customize.annotation.CustomizeCache)")
-    public void pointCut() {
-
-    }
 
     /**
      * 实现思路
@@ -53,23 +48,23 @@ public class CustomizeCacheAop {
      * @param point
      */
     @Around(value = "@annotation(cache)")
-    public Object cacheMethod(ProceedingJoinPoint point, CustomizeCache cache) {
+    private Object cacheMethod(ProceedingJoinPoint point, CustomizeCache cache) {
         logger.info("开始执行缓存注解方法------");
         Object result = null;
+        lock.lock();
         try {
             String key = null;
             //获取方法参数
             Object[] args = point.getArgs();
             key = JSON.toJSONString(args);
 
-            //加锁
-            LockInfo lockInfo = SafeLock.reenterLock(3, TimeUnit.MINUTES);
+            //todo 线程安全为什么要锁
+
+            //todo aop 多线程
+            // todo 异步方法执行
 
             logger.info(Thread.currentThread().getName() + "线程获取锁执行");
-            if (lockInfo.lockFlag == false) {
-                logger.info("该锁已被获取--");
-                return " ";
-            }
+
 
             String value = stringRedisTemplate.opsForValue().get(key);
             logger.info("获取缓存结果key={}, value={}", key, value);
@@ -88,15 +83,13 @@ public class CustomizeCacheAop {
                 stringRedisTemplate.opsForValue().set(key, JSON.toJSONString(object));
                 result = JSON.toJSONString(object);
             }
-
             return result;
         } catch (Throwable e) {
             logger.error("自定义缓存实现异常", e);
         } finally {
-            //解锁
-            SafeLock.unLock();
+            lock.unlock();
         }
-        return result;
+        return null;
     }
 
     /**

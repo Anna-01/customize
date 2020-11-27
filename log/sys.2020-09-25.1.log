@@ -1,0 +1,16 @@
+2020-09-25 08:32:50,967 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-25 08:32:50,968 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-25 08:32:51,043 INFO (CustomizeCacheAop.java:68)- Thread-22线程获取锁执行
+2020-09-25 08:32:53,238 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"
+2020-09-25 08:32:53,272 INFO (CustomizeCacheAop.java:68)- Thread-15线程获取锁执行
+2020-09-25 08:32:53,274 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"
+2020-09-25 08:32:53,274 INFO (CustomizeCacheAop.java:68)- Thread-23线程获取锁执行
+2020-09-25 08:32:53,276 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"
+2020-09-25 08:32:53,276 INFO (CustomizeCacheAop.java:68)- Thread-27线程获取锁执行
+2020-09-25 08:32:53,278 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"
+2020-09-25 08:32:53,278 INFO (CustomizeCacheAop.java:68)- Thread-31线程获取锁执行
+2020-09-25 08:32:53,280 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"
+2020-09-25 08:32:53,280 INFO (CustomizeCacheAop.java:68)- Thread-9线程获取锁执行
+2020-09-25 08:32:53,298 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"
+2020-09-25 08:32:53,299 INFO (CustomizeCacheAop.java:68)- Thread-24线程获取锁执行
+2020-09-25 08:32:53,301 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"

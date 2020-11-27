@@ -1,0 +1,32 @@
+2020-09-24 07:46:53,752 INFO (StartupInfoLogger.java:55)- Starting CustomizeCacheTest on SKY-20200628CJA with PID 1684 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-24 07:46:53,762 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-24 07:46:53,764 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-09-24 07:46:58,080 INFO (StartupInfoLogger.java:61)- Started CustomizeCacheTest in 4.672 seconds (JVM running for 6.604)
+2020-09-24 07:46:58,122 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,122 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,122 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,122 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,122 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,124 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,123 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,124 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,122 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,124 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,123 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,122 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,123 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,122 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,125 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,123 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,122 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,123 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,123 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,122 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,126 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,123 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,122 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,122 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,122 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,125 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,123 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------
+2020-09-24 07:46:58,126 INFO (CustomizeCacheAop.java:57)- 开始执行缓存注解方法------

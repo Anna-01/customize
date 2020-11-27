@@ -1,0 +1,33 @@
+2020-09-25 08:32:53,320 INFO (CustomizeCacheAop.java:68)- Thread-4线程获取锁执行
+2020-09-25 08:32:53,323 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"
+2020-09-25 08:32:53,324 INFO (CustomizeCacheAop.java:68)- Thread-3线程获取锁执行
+2020-09-25 08:32:53,325 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"
+2020-09-25 08:32:53,326 INFO (CustomizeCacheAop.java:68)- Thread-16线程获取锁执行
+2020-09-25 08:32:53,327 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"
+2020-09-25 08:32:53,328 INFO (CustomizeCacheAop.java:68)- Thread-12线程获取锁执行
+2020-09-25 08:32:53,330 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"
+2020-09-25 08:32:53,330 INFO (CustomizeCacheAop.java:68)- Thread-7线程获取锁执行
+2020-09-25 08:32:53,332 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"
+2020-09-25 08:32:53,332 INFO (CustomizeCacheAop.java:68)- Thread-5线程获取锁执行
+2020-09-25 08:32:53,334 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"
+2020-09-25 08:32:53,334 INFO (CustomizeCacheAop.java:68)- Thread-11线程获取锁执行
+2020-09-25 08:32:53,335 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"
+2020-09-25 08:32:53,335 INFO (CustomizeCacheAop.java:68)- Thread-28线程获取锁执行
+2020-09-25 08:32:53,336 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"
+2020-09-25 08:32:53,337 INFO (CustomizeCacheAop.java:68)- Thread-20线程获取锁执行
+2020-09-25 08:32:53,338 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"
+2020-09-25 08:32:53,338 INFO (CustomizeCacheAop.java:68)- Thread-17线程获取锁执行
+2020-09-25 08:32:53,339 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"
+2020-09-25 08:32:53,339 INFO (CustomizeCacheAop.java:68)- Thread-19线程获取锁执行
+2020-09-25 08:32:53,340 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"
+2020-09-25 08:32:53,340 INFO (CustomizeCacheAop.java:68)- Thread-18线程获取锁执行
+2020-09-25 08:32:53,341 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"
+2020-09-25 08:32:53,341 INFO (CustomizeCacheAop.java:68)- Thread-30线程获取锁执行
+2020-09-25 08:32:53,342 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"
+2020-09-25 08:32:53,342 INFO (CustomizeCacheAop.java:68)- Thread-10线程获取锁执行
+2020-09-25 08:32:53,343 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"
+2020-09-25 08:32:53,344 INFO (CustomizeCacheAop.java:68)- Thread-6线程获取锁执行
+2020-09-25 08:32:53,345 INFO (CustomizeCacheAop.java:75)- 获取缓存结果key=[115], value="返回结果"
+2020-09-25 08:33:34,292 INFO (StartupInfoLogger.java:55)- Starting CustomizeCacheTest on SKY-20200628CJA with PID 18716 (started by My in C:\Users\My\IdeaProjects\customize)
+2020-09-25 08:33:34,293 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-25 08:33:34,296 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
